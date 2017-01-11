@@ -17,16 +17,16 @@ import java.net.MalformedURLException;
 public class TestBaseWeb {
     private String host = "localhost";
     private int port = 8889;
-    private String projectBaseDirectory = "C:\\Users\\tom.ben-simhon\\workspace\\project4";
+
     private String reportDirectory = "reports";
     private String reportFormat = "xml";
-    private String testName = "udrive-firstexperience";
+    private String testName = "untitled";
     protected AppiumDriver<MobileElement> driver = null;
 
     @BeforeTest
     public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(SeeTestCapabilityType.PROJECT_BASE_DIRECTORY, projectBaseDirectory);
+
         capabilities.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
         capabilities.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
         capabilities.setCapability(SeeTestCapabilityType.TEST_NAME, testName);
