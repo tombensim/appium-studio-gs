@@ -1,0 +1,32 @@
+group 'com.experitest'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+//sourceSets {
+//    main {
+//        java {
+//            srcDirs = ['src/java']
+//        }
+//        resources {
+//            srcDirs = ['src/resources']
+//        }
+//        test {
+//            testDirs = ['src/test']
+//        }
+//    }
+//}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://repo.experitest.com:8010/Maven2/"
+    }
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.8'
+    compile group: 'com.experitest', name: 'dimappium', version: '10.4.999'
+}

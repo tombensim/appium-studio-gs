@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started.iml" filepath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_main.iml" filepath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_main.iml" group="appium-gradle-getting-started" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_test.iml" filepath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_test.iml" group="appium-gradle-getting-started" />
+    </modules>
+  </component>
+</project>
