@@ -1,14 +1,10 @@
-package testsWeb;//package <set your test package>;
+package web;//package <set your test package>;
 import com.experitest.appium.*;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
-import io.appium.java_client.remote.MobileBrowserType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 
 import java.net.URL;

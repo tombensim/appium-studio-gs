@@ -27,6 +27,6 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'org.testng', name: 'testng', version: '6.8'
+    compile group: 'org.testng', name: 'testng', version: '6.8'
     compile group: 'com.experitest', name: 'dimappium', version: '10.4.999'
 }

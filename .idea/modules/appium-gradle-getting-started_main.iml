@@ -9,7 +9,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.testng:testng:6.8" level="project" />
     <orderEntry type="library" name="Gradle: com.experitest:dimappium:10.4.999" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.beanshell:bsh:2.0b4" level="project" />
+    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.27" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.6" level="project" />
     <orderEntry type="library" name="Gradle: io.appium:java-client:4.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.experitest:imageClient:10.4.999" level="project" />
     <orderEntry type="library" name="Gradle: com.experitest:boon-0.33:10.2" level="project" />
@@ -26,6 +31,7 @@
     <orderEntry type="library" name="Gradle: com.experitest:ws-commons-util-1.0.2:10.2" level="project" />
     <orderEntry type="library" name="Gradle: com.experitest:xmlrpc-client-3.1.2:10.2" level="project" />
     <orderEntry type="library" name="Gradle: com.experitest:xmlrpc-common-3.1.2:10.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" level="project" />

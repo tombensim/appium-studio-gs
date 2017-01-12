@@ -1,2 +1,3 @@
 rootProject.name = 'appium-gradle-getting-started'
+include 'getting-started'
 

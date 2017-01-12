@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="appium-gradle-getting-started_main" target="1.8" />
       <module name="appium-gradle-getting-started_test" target="1.8" />
+      <module name="getting-started_main" target="1.5" />
+      <module name="getting-started_test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

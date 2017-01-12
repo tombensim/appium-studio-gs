@@ -1,4 +1,9 @@
-package testsNative;
+/*
+ * Copyright (c) 2017. Experitest
+ *
+ */
+
+package app;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

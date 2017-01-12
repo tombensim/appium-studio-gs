@@ -1,7 +1,11 @@
-package testsNative;
+/*
+ * Copyright (c) 2017. Experitest
+ *
+ */
 
-import com.experitest.appium.SeeTestAndroidDriver;
-import com.experitest.appium.SeeTestCapabilityType;
+package app;
+
+import com.experitest.appium.*;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -10,8 +14,10 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -22,14 +28,13 @@ import java.net.URL;
  */
 public class TestBaseNative {
 
-
     protected String testName;
     protected String host;
     protected int port;
     protected String reportDirectory;
     protected String reportFormat;
     protected AppiumDriver<MobileElement> driver;
-
+    String appPath = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribank";
     private DesiredCapabilities caps;
 
     //Constructors
@@ -45,21 +50,23 @@ public class TestBaseNative {
     protected TestBaseNative(){
         this(null);
     }
-    @Parameters("")
+    @Parameters("os")
     @BeforeTest
-    public void setUp() throws MalformedURLException {
+    public void setUp(@Optional("android") String os) throws MalformedURLException {
         caps = new DesiredCapabilities();
         // App Capabilities
 //        caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
 //        caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
-        caps.setCapability(MobileCapabilityType.APP,System.getProperty("user.dir") + "\\eribank.apk");
+
+        appPath = os.equals("android") ? appPath + ".apk" : appPath + ".ipa";
+        caps.setCapability(MobileCapabilityType.APP, appPath);
         caps.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, false);
         caps.setCapability(MobileCapabilityType.NO_RESET, true);
 
         // Device Capabilities
-        caps.setCapability(CapabilityType.PLATFORM,"android");
+        caps.setCapability(CapabilityType.PLATFORM,os);
         caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Android Device");
-        caps.setCapability(SeeTestCapabilityType.DEVICE_QUERY,"@name='LGE Nexus 5'");
+//        caps.setCapability(SeeTestCapabilityType.DEVICE_QUERY,"@name='LGE Nexus 5'");
 
 //        caps.setCapability(SeeTestCapabilityType.DEVICE_QUERY, "@name='samsung SM-N9005'");
 
@@ -80,7 +87,9 @@ public class TestBaseNative {
 
         //Driver initialization
         URL url =  new URL ("http://localhost:8889");
-        driver = new SeeTestAndroidDriver<MobileElement>(url,caps);
+        driver = os.equals("android") ?
+                new SeeTestAndroidDriver<MobileElement>(url,caps) : new SeeTestIOSDriver<MobileElement>(url,caps);
+
 
 
 
@@ -88,7 +97,6 @@ public class TestBaseNative {
     @AfterTest
     public void tearDown()
     {
-
         if (driver!=null)
             driver.quit();
     }
