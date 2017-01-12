@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -44,7 +45,7 @@ public class TestBaseNative {
     protected TestBaseNative(){
         this(null);
     }
-
+    @Parameters("")
     @BeforeTest
     public void setUp() throws MalformedURLException {
         caps = new DesiredCapabilities();

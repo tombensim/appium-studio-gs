@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
+      <parameter name="os" value="ios"/>
       <class name="testsWeb.SearchGoogleTest"/>
     </classes>
   </test> <!-- Test -->
