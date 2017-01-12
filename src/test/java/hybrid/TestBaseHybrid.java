@@ -38,19 +38,6 @@ public class TestBaseHybrid {
     String appPath = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribank";
     private DesiredCapabilities caps;
 
-    //Constructors
-    public TestBaseHybrid(DesiredCapabilities caps){
-        this.caps = caps;
-        host = "localhost";
-        port = 4723;
-        reportDirectory = "reports";
-        reportFormat = "xml";
-        driver = null;
-
-    }
-    protected TestBaseHybrid(){
-        this(null);
-    }
     @Parameters("os")
     @BeforeTest
     public void setUp(@Optional("android") String os) throws MalformedURLException {
@@ -61,7 +48,7 @@ public class TestBaseHybrid {
 
         appPath = os.equals("android") ? appPath + ".apk" : appPath + ".ipa";
         caps.setCapability(MobileCapabilityType.APP, appPath);
-        caps.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, false);
+        caps.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, true);
         caps.setCapability(MobileCapabilityType.NO_RESET, true);
 
         // Device Capabilities
@@ -90,10 +77,6 @@ public class TestBaseHybrid {
         URL url =  new URL ("http://localhost:8889");
         driver = os.equals("android") ?
                 new SeeTestAndroidDriver<MobileElement>(url,caps) : new SeeTestIOSDriver<MobileElement>(url,caps);
-
-
-
-
     }
     @AfterTest
     public void tearDown()

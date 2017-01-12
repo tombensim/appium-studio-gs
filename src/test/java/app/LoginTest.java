@@ -26,13 +26,11 @@ public class LoginTest extends TestBaseNative {
         loginPage = new LoginPage(driver);
     }
     @Test
-    public void testLoginWithValidCreds()
-    {
+    public void testLoginWithValidCreds() throws InterruptedException {
         loginPage.login(VALID_USER,VALID_PASSWORD);
     }
     @Test
-    public void testFailToLoginWithInvalidCreds()
-    {
+    public void testFailToLoginWithInvalidCreds() throws InterruptedException {
         loginPage.login(INVALID_USER,INVALID_PASSWORD);
     }
     @AfterTest

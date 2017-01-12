@@ -1,4 +1,4 @@
-package pages.webPages;
+package pages.web;
 
 /**
  * Created by tom.ben-simhon on 1/11/2017.

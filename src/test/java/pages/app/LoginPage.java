@@ -36,10 +36,11 @@ public class LoginPage extends BasePage{
      Tries to login to the application
     -  @params Creds, Username and Password
     */
-    public void login(String username, String password) throws NoSuchElementException{
+    public void login(String username, String password) throws NoSuchElementException, InterruptedException {
    		usernameField.sendKeys(username);
         passwordField.sendKeys(password);
 		loginButton.click();
+		Thread.sleep(1000);
     }
 
 }
