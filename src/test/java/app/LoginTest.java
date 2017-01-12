@@ -8,7 +8,7 @@ package app;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import nativePages.LoginPage;
+import pages.app.LoginPage;
 
 /**
  * Created by tom.ben-simhon on 12/27/2016.

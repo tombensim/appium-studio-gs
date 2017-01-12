@@ -1,4 +1,9 @@
-package nativePages;
+/*
+ * Copyright (c) 2017. Experitest
+ *
+ */
+
+package pages.app;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
