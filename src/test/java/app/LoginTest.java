@@ -5,6 +5,7 @@
 
 package app;
 
+import framework.TestBase;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,6 +14,8 @@ import pages.app.LoginPage;
 /**
  * Created by tom.ben-simhon on 12/27/2016.
  */
+
+
 public class LoginTest extends TestBaseNative {
     //Class private members
     private static final String VALID_USER = "company";

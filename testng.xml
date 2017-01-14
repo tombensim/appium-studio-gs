@@ -12,8 +12,8 @@
       <!--<class name="app.LoginTest"/>-->
     <!--</classes>-->
     <classes>
-      <parameter name="os" value="ios"/>
-      <class name="web.SearchGoogleTest"/>
+      <parameter name="os" value="android"/>
+      <class name="app.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
