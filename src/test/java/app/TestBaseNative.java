@@ -14,6 +14,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 import org.testng.log4testng.Logger;
@@ -31,89 +32,97 @@ import java.net.URL;
 
 @Listeners(LogListener.class)
 public class TestBaseNative {
-    private static final Logger LOGGER = Logger.getLogger(TestBaseNative.class);
-    public static final String BEFORE_METHOD = "Executing Test Method : %s \n";
 
-    protected String testName;
-    protected String host;
-    protected int port;
-    protected String reportDirectory;
-    protected String reportFormat;
+    public static final  String  AFTER_METHOD      = "Finished Execution for test method : %s";
+    public static final  String  BEFORE_METHOD     = "Executing Test Method : %s \n";
+    public static final  String  BEFORE_TEST_CLASS = "Starting test execution for mesthods in class %s  \n";
+    public static final  String  DEFAULT_SUITE_OS  = "android";
+    public static final  boolean LOG_TO_SOUT       = true;
+    //Appium Studio parameters
+    public static final  String  SERVER_URL        = "http://localhost:8889";
+    // Logger configurations
+    private static final Logger  LOGGER            = Logger.getLogger (TestBaseNative.class);
+    public static final  String  USERNAME          = "tom";
+    public static final  String  PASSWORD          = "xioN2401";
+    public static final  String  PROJECT_NAME      = "Default";
+    public static final  String  USE_GRID          = "false";
+
+    public static String SUITE_OS = null;
+
+    protected String                      testName;
+    protected String                      reportDirectory;
+    protected String                      reportFormat;
     protected AppiumDriver<MobileElement> driver;
-    String appPath = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribank";
-    private DesiredCapabilities caps;
+    protected DesiredCapabilities         testSuiteCaps;
+    protected DesiredCapabilities         testCapabilities;
+    //Test Classes packaged in app
+    private String appPath = System.getProperty ("user.dir") + File.separator + "apps" + File.separator + "eribank";
 
+    @Parameters({"os", "generateReport"})
+    @BeforeTest
+    public void setUp(final ITestContext context,
+                      @Optional(DEFAULT_SUITE_OS) String os,
+                      @Optional("false") boolean generateReport) throws MalformedURLException {
+        SUITE_OS = os;
 
-    //Constructors
-    public TestBaseNative(DesiredCapabilities caps) {
-        this.caps = caps;
-        host = "localhost";
-        port = 4723;
-        reportDirectory = "reports";
-        reportFormat = "xml";
-        driver = null;
+        Reporter.log (String.format (BEFORE_TEST_CLASS, context.getName ()), LOG_TO_SOUT);
+        Reporter.log ("Test Parameters as list : ", LOG_TO_SOUT);
+        context.getCurrentXmlTest ()
+                .getTestParameters ()
+                .forEach ((key, value) -> Reporter.log (key + " : " + value, LOG_TO_SOUT));
 
+        // Device Capabilities
+        testSuiteCaps = new DesiredCapabilities ();
+        testSuiteCaps.setCapability (CapabilityType.PLATFORM, os);
+        testSuiteCaps.setCapability (MobileCapabilityType.DEVICE_NAME, os + "Device");
+
+        //Reporting Configurations for Appium Studio Reporting
+        if (generateReport) {
+            testSuiteCaps.setCapability (SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
+            testSuiteCaps.setCapability (SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
+            testSuiteCaps.setCapability (SeeTestCapabilityType.TEST_NAME, testName);
+        }
+        //Grid Connection configuration
+
+        testSuiteCaps.setCapability (SeeTestCapabilityType.USE_REMOTE_GRID, USE_GRID);
+        testSuiteCaps.setCapability (SeeTestCapabilityType.USERNAME, USERNAME);
+        testSuiteCaps.setCapability (SeeTestCapabilityType.PASSWORD, PASSWORD);
+        testSuiteCaps.setCapability (SeeTestCapabilityType.PROJECT_NAME, PROJECT_NAME);
+
+        Reporter.log ("DEBUG : " + context.getCurrentXmlTest ().getClasses ().toString (), true);
+        Reporter.log ("app path : " + appPath, LOG_TO_SOUT);
+        appPath = os.equals ("android") ? appPath + ".apk" : appPath + ".ipa";
     }
-
-    protected TestBaseNative() {
-        this(null);
-    }
-
 
     @BeforeMethod
     public void setUpBeforeMethod(Method m) throws Exception {
-        LOGGER.info(String.format(BEFORE_METHOD, m.getName()));
-        Reporter.log(String.format(BEFORE_METHOD, m.getName()), true);
-    }
+        LOGGER.info (String.format (BEFORE_METHOD, m.getName ()));
+        Reporter.log (String.format (BEFORE_METHOD, m.getName ()), LOG_TO_SOUT);
+        m.getClass ().getPackage ();
 
-    @Parameters("os")
-    @BeforeTest
-    public void setUp(@Optional("android") String os) throws MalformedURLException {
-        caps = new DesiredCapabilities();
         // App Capabilities
-//        caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
-//        caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
-
-        Reporter.log("app path : " + appPath, true);
-        appPath = os.equals("android") ? appPath + ".apk" : appPath + ".ipa";
-        caps.setCapability(MobileCapabilityType.APP, appPath);
-        caps.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, false);
-        caps.setCapability(MobileCapabilityType.NO_RESET, true);
-
-        // Device Capabilities
-        caps.setCapability(CapabilityType.PLATFORM, os);
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
-//        caps.setCapability(SeeTestCapabilityType.DEVICE_QUERY,"@name='LGE Nexus 5'");
-
-//        caps.setCapability(SeeTestCapabilityType.DEVICE_QUERY, "@name='samsung SM-N9005'");
-
-//        //Grid Connection configuration
-//        caps.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID,"true");
-//        caps.setCapability(SeeTestCapabilityType.USERNAME, "tom");
-//        caps.setCapability(SeeTestCapabilityType.PASSWORD, "xioN2401");
-//        caps.setCapability(SeeTestCapabilityType.PROJECT_NAME, "Default");
-
-        /* Appium Studio Additional
-                 Here we place all of the additonal capabilites that will be used to automatically generate reports, and dynamicall select Device
-
-        //Reporting Configurations
-//        caps.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
-//        caps.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
-//        caps.setCapability(SeeTestCapabilityType.TEST_NAME, testName);
-          */
+        testSuiteCaps.setCapability (MobileCapabilityType.APP, appPath);
+        testSuiteCaps.setCapability (SeeTestCapabilityType.INSTRUMENT_APP, false);
+        testSuiteCaps.setCapability (MobileCapabilityType.NO_RESET, true);
 
         //Driver initialization
-        URL url = new URL("http://localhost:8889");
-        driver = os.equals("android") ?
-                new SeeTestAndroidDriver<MobileElement>(url, caps) : new SeeTestIOSDriver<MobileElement>(url, caps);
+        URL url = new URL (SERVER_URL);
+        driver = DEFAULT_SUITE_OS.equals ("android") ?
+                new SeeTestAndroidDriver<MobileElement> (url, testSuiteCaps) :
+                new SeeTestIOSDriver<MobileElement> (url, testSuiteCaps);
+    }
 
-
+    @AfterMethod
+    public void tearDownMethod(Method m) {
+        LOGGER.info (String.format (AFTER_METHOD, m.getName ()));
+        Reporter.log (String.format (AFTER_METHOD, m.getName ()), LOG_TO_SOUT);
+        driver.quit ();
     }
 
     @AfterTest
     public void tearDown() {
         if (driver != null)
-            driver.quit();
+            driver.quit ();
     }
 }
 
