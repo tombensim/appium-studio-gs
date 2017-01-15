@@ -3,18 +3,18 @@
  *
  */
 
-package app;
+package app.tests;
 
 import framework.TestBase;
 import org.testng.annotations.*;
-import pages.app.LoginPage;
+import app.pages.LoginPage;
 
 /**
  * Created by tom.ben-simhon on 12/27/2016.
  */
 
 
-public class LoginTest extends TestBaseNative {
+public class LoginTest extends TestBase {
     //Class private members
     private static final String VALID_USER = "company";
     private static final String VALID_PASSWORD = "company";

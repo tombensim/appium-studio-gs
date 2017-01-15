@@ -3,7 +3,7 @@
  *
  */
 
-package hybrid;
+package hybrid.tests;
 
 import com.experitest.appium.SeeTestAndroidDriver;
 import com.experitest.appium.SeeTestCapabilityType;

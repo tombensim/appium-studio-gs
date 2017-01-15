@@ -1,4 +1,4 @@
-package web;//package <set your test package>;
+package web.tests;//package <set your test package>;
 import com.experitest.appium.*;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

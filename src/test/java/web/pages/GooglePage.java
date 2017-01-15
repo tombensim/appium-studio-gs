@@ -3,7 +3,7 @@
  *
  */
 
-package pages.web;
+package web.pages;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;

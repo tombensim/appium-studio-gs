@@ -3,7 +3,7 @@
  *
  */
 
-package pages.app;
+package app.pages;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

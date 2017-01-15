@@ -29,9 +29,20 @@ repositories {
 dependencies {
     compile group: 'org.testng', name: 'testng', version: '6.8'
     compile group: 'com.experitest', name: 'dimappium', version: '10.4.999'
+    testCompile group: 'org.testng', name: 'testng', version: '6.8'
+    testCompile group: 'com.experitest', name: 'dimappium', version: '10.4.999'
+
 }
 
-
+apply plugin: 'java'
+sourceSets {
+    main {
+        runtimeClasspath = files(output.resourcesDir) + runtimeClasspath
+    }
+    test {
+        runtimeClasspath = files(output.resourcesDir) + runtimeClasspath
+    }
+}
 test {
     useTestNG() {
         // runlist to executed. path is relative to current folder

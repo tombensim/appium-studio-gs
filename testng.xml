@@ -9,11 +9,11 @@
   <test name="Test">
     <!--<classes>-->
       <!--<parameter name="os" value="ios"/>-->
-      <!--<class name="app.LoginTest"/>-->
+      <!--<class name="tests.pages.LoginTest"/>-->
     <!--</classes>-->
     <classes>
       <parameter name="os" value="android"/>
-      <class name="app.LoginTest"/>
+      <class name="app.tests.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

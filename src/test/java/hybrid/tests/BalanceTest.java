@@ -3,13 +3,12 @@
  *
  */
 
-package hybrid;
+package hybrid.tests;
 
 import junit.framework.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.app.HomePage;
-import pages.app.LoginPage;
+import app.pages.HomePage;
+import app.pages.LoginPage;
 
 /**
  * Created by tom.ben-simhon on 1/12/2017.
