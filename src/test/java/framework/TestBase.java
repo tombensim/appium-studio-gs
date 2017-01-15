@@ -45,7 +45,6 @@ public class TestBase {
                       @Optional("native") String suite)
             throws MalformedURLException {
 
-        Reporter.log("message",true);
         appPath = os.equals("android") ? appPath + ".apk" : appPath + ".ipa";
         caps = new DesiredCapabilities();
         System.out.println(this.suite);

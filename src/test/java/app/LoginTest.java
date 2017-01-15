@@ -6,9 +6,7 @@
 package app;
 
 import framework.TestBase;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.app.LoginPage;
 
 /**
@@ -24,7 +22,7 @@ public class LoginTest extends TestBaseNative {
     private static final String INVALID_USER = "invalid";
 
     private LoginPage loginPage = null;
-    @BeforeTest
+    @BeforeMethod
     public void setUpLoginTests() {
         loginPage = new LoginPage(driver);
     }
@@ -36,7 +34,7 @@ public class LoginTest extends TestBaseNative {
     public void testFailToLoginWithInvalidCreds() throws InterruptedException {
         loginPage.login(INVALID_USER,INVALID_PASSWORD);
     }
-    @AfterTest
+    @AfterMethod
     public void tearDownLoginTests()
     {
         driver.quit();
