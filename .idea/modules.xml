@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started.iml" filepath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_main.iml" filepath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_main.iml" group="appium-gradle-getting-started" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_test.iml" filepath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_test.iml" group="appium-gradle-getting-started" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/getting-started/getting-started.iml" filepath="$PROJECT_DIR$/.idea/modules/getting-started/getting-started.iml" group="getting-started" />
     </modules>
   </component>
 </project>
