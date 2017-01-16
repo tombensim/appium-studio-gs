@@ -17,9 +17,6 @@ public class AppiumStudioClient extends Client {
     public AppiumStudioClient(URL url,String testName) {
         super(url.getHost (),url.getPort (),true);
     }
-
-
-
-
+    
 }
 

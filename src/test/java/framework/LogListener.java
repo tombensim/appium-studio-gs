@@ -86,7 +86,6 @@ public class LogListener implements ITestListener, ISuiteListener, IInvokedMetho
         String status = null;
 
         switch (result.getStatus()) {
-
             case ITestResult.SUCCESS:
                 status = "Pass";
                 break;

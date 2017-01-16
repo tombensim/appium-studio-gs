@@ -8,8 +8,6 @@ package framework;
 import com.experitest.appium.SeeTestAndroidDriver;
 import com.experitest.appium.SeeTestCapabilityType;
 import com.experitest.appium.SeeTestIOSDriver;
-import framework.CapabilitiesManager;
-import framework.LogListener;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -19,8 +17,8 @@ import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
 import org.testng.Reporter;
 import org.testng.annotations.*;
-import org.testng.log4testng.Logger;
 import utils.AppiumStudioClient;
+
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -57,14 +55,12 @@ public class TestBase {
     private String reportDirectory;
     private String reportFormat;
 
-    public TestBase() {
-    }
 
-    @Parameters({"os", "generateReport"})
+    @Parameters({"os", "grid"})
     @BeforeTest
     public void setUp(final ITestContext context,
                       @Optional(DEFAULT_SUITE_OS) String os,
-                      @Optional("false") boolean generateReport) throws MalformedURLException {
+                      @Optional("false") boolean useGrid) throws MalformedURLException {
 
         methodMap = mapMethodNamesToTestNGmethods(context);
         URL url = new URL(SERVER_URL);
@@ -81,11 +77,11 @@ public class TestBase {
         testSuiteCaps.setCapability(MobileCapabilityType.DEVICE_NAME, os + "Device");
 
         //Reporting Configurations for Appium Studio Reporting
-        if (generateReport) {
-            testSuiteCaps.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
-            testSuiteCaps.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
-            testSuiteCaps.setCapability(SeeTestCapabilityType.TEST_NAME, testName);
-        }
+//        if (generateReport) {
+//            testSuiteCaps.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
+//            testSuiteCaps.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
+//            testSuiteCaps.setCapability(SeeTestCapabilityType.TEST_NAME, testName);
+//        }
         //Grid Connection configuration
 
         testSuiteCaps.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID, USE_GRID);

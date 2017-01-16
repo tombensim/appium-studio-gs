@@ -36,11 +36,9 @@ public class CapabilitiesManager {
     public CapabilitiesManager() {
         this.caps = new DesiredCapabilities();
     }
-
     public CapabilitiesManager(DesiredCapabilities capabilities) {
         this.caps = capabilities;
     }
-
 
     public void getReportCapabilities() {
 
