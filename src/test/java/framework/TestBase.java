@@ -39,8 +39,8 @@ public class TestBase {
     private static final String DEFAULT_SUITE_OS = "android";
 
     //Grid configurations
-    private static final String USERNAME = "tom";
-    private static final String PASSWORD = "xioN2401";
+    private static final String USERNAME = "";
+    private static final String PASSWORD = "";
     private static final String PROJECT_NAME = "Default";
     private static final String USE_GRID = "false";
 
