@@ -29,7 +29,8 @@ public class LoginTest extends TestBase {
     public void testLoginWithValidCreds() throws InterruptedException {
         loginPage.login(VALID_USER,VALID_PASSWORD);
     }
-    @Test
+
+    @Test(enabled = false)
     public void testFailToLoginWithInvalidCreds() throws InterruptedException {
         loginPage.login(INVALID_USER,INVALID_PASSWORD);
     }

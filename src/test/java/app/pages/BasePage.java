@@ -28,7 +28,8 @@ public abstract class BasePage {
         apc = Utils.getAppiumClient(driver);
         wda = new WebDriverWait(driver, TIME_OUT_WAIT_IN_SECONDS);
         Utils.setLogger(driver,Utils.getLogger(false));
-        PageFactory.initElements(new AppiumFieldDecorator(driver, 5, TimeUnit.SECONDS), this);
+        apc.sleep(1000);
+        PageFactory.initElements(new AppiumFieldDecorator(driver, 10, TimeUnit.SECONDS), this);
         Utils.setLogger(driver,Utils.getLogger(true));
     }
     //public abstract void verifyPage();

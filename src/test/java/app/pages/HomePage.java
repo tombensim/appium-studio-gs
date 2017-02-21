@@ -28,7 +28,12 @@ public class HomePage extends BasePage{
 		super(driver);
 
 	}
-	
+
+	public MakePaymentPage navigateToMakePage(){
+		makePayment.click();
+		return new MakePaymentPage(driver);
+	}
+
     public boolean logout() throws InterruptedException {
 			logoutButton.click();
 			return true;

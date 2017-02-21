@@ -17,7 +17,9 @@ import java.util.NoSuchElementException;
 
 public class LoginPage extends BasePage{
 
-	//Reference Objects
+    public static final String VALID_USERNAME = "company";
+    public static final String VALID_PASSWORD = "company";
+    //Reference Objects
     @AndroidFindBy(id = "usernameTextField")
     @iOSFindBy (accessibility = "usernameTextField")
     protected MobileElement usernameField;
@@ -28,20 +30,30 @@ public class LoginPage extends BasePage{
     @iOSFindBy (xpath = "//*[@text='Login']")
     protected MobileElement loginButton;
     
-    public LoginPage(AppiumDriver driver) {
+    public LoginPage(AppiumDriver driver)
+    {
         super(driver);
 	}
     // Page methods
-    /*
+    /**
      Tries to login to the application
     -  @params Creds, Username and Password
-    */
+    **/
     public void login(String username, String password) throws NoSuchElementException, InterruptedException {
    		usernameField.sendKeys(username);
         passwordField.sendKeys(password);
 		loginButton.click();
 		Thread.sleep(1000);
     }
+
+    public HomePage loginToHomePage()
+    {
+        usernameField.sendKeys(VALID_USERNAME);
+        passwordField.sendKeys(VALID_PASSWORD);
+        loginButton.click();
+        return new HomePage(driver);
+    }
+
     public void closeFailDialog()
     {
         driver.findElement(By.xpath("//*[contains(@text,'Close') or contains(@text,'Dismiss')]")).click();
