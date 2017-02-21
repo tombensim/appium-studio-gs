@@ -11,7 +11,10 @@ import com.experitest.client.Client;
 import com.experitest.client.log.ILogger;
 import com.experitest.client.log.Level;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
+
+import java.net.URL;
 
 /**
  * Created by tom.ben-simhon on 1/18/2017.
@@ -38,7 +41,10 @@ public class Utils {
 //            ((SeeTestIOSDriver) driver).setLogger(logger);
 //        }
     }
-
+    public static AppiumDriver getDriver(String os,URL url, DesiredCapabilities caps)
+    {
+        return os.equals("android") ? new SeeTestAndroidDriver<>(url,caps) : new SeeTestIOSDriver<>(url,caps);
+    }
     public static ILogger getLogger(boolean printToConsole) {
         return (level, o, throwable) -> Reporter.log(o.toString(),printToConsole);
     }

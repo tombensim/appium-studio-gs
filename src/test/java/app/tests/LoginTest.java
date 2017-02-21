@@ -33,7 +33,9 @@ public class LoginTest extends TestBase {
     public void testFailToLoginWithInvalidCreds() throws InterruptedException {
         loginPage.login(INVALID_USER,INVALID_PASSWORD);
     }
-    @Test void testFailToLoginThreeTime() throws InterruptedException {
+
+    @Test(enabled = false)
+    void testFailToLoginThreeTime() throws InterruptedException {
         for (int i = 0; i <2 ; i++) {
         loginPage.login(INVALID_USER,INVALID_PASSWORD);
         loginPage.closeFailDialog();

@@ -3,10 +3,53 @@
   ~ Copyright (c) 2017. Experitest
   ~
   -->
-<suite name="EriBank Suite Tests" verbose="1" >
-    <test name="Authentication" >
+<suite name="EriBank Suite Tests" verbose="1"  parallel="tests" thread-count="10" >
+
+
+    <!--<test name="Authentication Android" >-->
+        <!--<parameter name="DeviceOS" value="android"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Authentication iOS" >-->
+        <!--<parameter name="DeviceOS" value="ios"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Authentication Android Grid" >
+        <parameter name="DeviceOS" value="android"></parameter>
+        <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
         </classes>
     </test>
+
+    <test name="Authentication iOS Grid" >
+        <parameter name="DeviceOS" value="ios"></parameter>
+        <parameter name="useGrid" value="true"></parameter>
+        <classes>
+            <class name="app.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Authentication Android 2 Grid" >
+        <parameter name="DeviceOS" value="android"></parameter>
+        <parameter name="useGrid" value="true"></parameter>
+        <classes>
+            <class name="app.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Authentication iOS 2 Grid" >
+        <parameter name="DeviceOS" value="ios"></parameter>
+        <parameter name="useGrid" value="true"></parameter>
+        <classes>
+            <class name="app.tests.LoginTest"/>
+        </classes>
+    </test>
+
 </suite>
