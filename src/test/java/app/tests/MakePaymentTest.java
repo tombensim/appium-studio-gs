@@ -24,6 +24,7 @@ public class MakePaymentTest extends TestBase {
     HomePage homePage;
     @Test
     public void testMakePayment() throws InterruptedException {
+            driver.launchApp();
             loginPage = new LoginPage(driver);
             homePage = loginPage.loginToHomePage();
             makePaymentPage = homePage.navigateToMakePage();

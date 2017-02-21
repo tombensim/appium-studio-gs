@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6121f7b0-0161-42e8-949f-52e8a0a97387" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/eribank.tests.xml" afterPath="$PROJECT_DIR$/src/test/eribank.tests.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java" />
     </list>
     <list id="326f3754-22fe-40bb-927a-e190b5efac43" name="Rejected commit: Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -137,8 +137,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="127" column="54" lean-forward="true" selection-start-line="127" selection-start-column="54" selection-end-line="127" selection-end-column="54" />
+            <state relative-caret-position="311">
+              <caret line="112" column="92" lean-forward="true" selection-start-line="112" selection-start-column="92" selection-end-line="112" selection-end-column="92" />
               <folding>
                 <element signature="docComment;class#TestBase#0" expanded="true" />
                 <element signature="e#6263#6264#0" expanded="true" />
@@ -148,7 +148,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eribank.tests.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eribank.tests.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="765">
@@ -171,8 +171,8 @@
       <file leaf-file-name="eribank.tests.local.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.local.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="425">
+              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -200,11 +200,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MakePaymentTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MakePaymentTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+            <state relative-caret-position="340">
+              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -734,13 +734,13 @@
         <option value="$PROJECT_DIR$/src/test/resources/build.properties" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/MakePaymentPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/eribank.tests.local.xml" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/framework/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/eribank.tests.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/framework/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java" />
       </list>
     </option>
   </component>
@@ -1755,7 +1755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487704837929</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="changed Jenkins TestNG.xml">
+      <created>1487705616066</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1487705616066</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1857,7 +1864,8 @@
     <MESSAGE value="build number from env variable" />
     <MESSAGE value="changed suite testname" />
     <MESSAGE value="added make payment tests&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added make payment tests&#10;" />
+    <MESSAGE value="changed Jenkins TestNG.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed Jenkins TestNG.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2191,52 +2199,52 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487705600587" expanded="true" signature="149228:149245" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149228:149263" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149228:149276" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149228:149291" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149326:152202" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149339:152187" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149393:149688" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149412:149673" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149475:149653" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149515:149619" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149536:149597" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149721:150027" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149740:150012" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149814:149992" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149854:149958" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="149875:149936" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150078:150395" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150097:150380" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150182:150360" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150222:150326" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150243:150304" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150438:150744" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150457:150729" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150531:150709" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150571:150675" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150592:150653" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150795:151127" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150814:151112" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150914:151092" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150954:151058" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="150975:151036" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151162:151474" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151181:151459" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151255:151439" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151295:151405" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151316:151383" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151526:151860" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151545:151845" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151647:151825" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151687:151791" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151708:151769" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151908:152173" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151927:152158" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="151960:152138" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="152000:152104" ph="..." />
-            <marker date="1487705600587" expanded="true" signature="152021:152082" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149612:149629" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149612:149647" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149612:149660" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149612:149675" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149710:152586" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149723:152571" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149777:150072" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149796:150057" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149859:150037" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149899:150003" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="149920:149981" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150105:150411" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150124:150396" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150198:150376" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150238:150342" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150259:150320" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150462:150779" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150481:150764" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150566:150744" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150606:150710" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150627:150688" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150822:151128" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150841:151113" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150915:151093" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150955:151059" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="150976:151037" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151179:151511" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151198:151496" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151298:151476" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151338:151442" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151359:151420" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151546:151858" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151565:151843" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151639:151823" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151679:151789" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151700:151767" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151910:152244" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="151929:152229" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152031:152209" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152071:152175" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152092:152153" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152292:152557" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152311:152542" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152344:152522" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152384:152488" ph="..." />
+            <marker date="1487706370477" expanded="true" signature="152405:152466" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2311,16 +2319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -2347,6 +2345,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -2358,18 +2380,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="127" column="54" lean-forward="true" selection-start-line="127" selection-start-column="54" selection-end-line="127" selection-end-column="54" />
+        <state relative-caret-position="311">
+          <caret line="112" column="92" lean-forward="true" selection-start-line="112" selection-start-column="92" selection-end-line="112" selection-end-column="92" />
           <folding>
             <element signature="docComment;class#TestBase#0" expanded="true" />
             <element signature="e#6263#6264#0" expanded="true" />
@@ -2378,19 +2392,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.local.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
