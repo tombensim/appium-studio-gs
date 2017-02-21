@@ -10,29 +10,20 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="appium-gradle-getting-started_main" />
-    <orderEntry type="library" name="Gradle: org.testng:testng:6.8" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:dimappium:10.4.999" level="project" />
-    <orderEntry type="library" name="Gradle: junit:junit:4.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.beanshell:bsh:2.0b4" level="project" />
-    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.27" level="project" />
-    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.experitest:dimappium:10.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.testng:testng:6.9.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-log4j12:1.7.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.experitest:manager-client:1.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.experitest:imageClient:10.4.47" level="project" />
     <orderEntry type="library" name="Gradle: io.appium:java-client:4.1.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:imageClient:10.4.999" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:boon-0.33:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:commons-codec-1.9:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:commons-io-2.4:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:commons-logging-1.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:httpclient-4.5.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:httpcore-4.4.4:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:httpmime-4.5.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:junit-4.4:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:mobile-webdriver:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:selenium-api-2.42.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:selenium-support-2.44.0:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:ws-commons-util-1.0.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:xmlrpc-client-3.1.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.experitest:xmlrpc-common-3.1.2:10.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-support:2.53.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlrpc:xmlrpc-client:3.1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlrpc:xmlrpc-common:3.1.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.48" level="project" />
+    <orderEntry type="library" name="Gradle: org.beanshell:bsh:2.0b4" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
@@ -42,13 +33,14 @@
     <orderEntry type="library" name="Gradle: cglib:cglib-nodep:3.2.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:4.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.8.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:2.53.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.ws.commons.util:ws-commons-util:1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-edge-driver:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:htmlunit-driver:2.21" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-firefox-driver:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-ie-driver:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-safari-driver:2.53.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-support:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-leg-rc:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
@@ -59,14 +51,13 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:4.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:4.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:4.3.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:2.53.1" level="project" />
-    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-api:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-exec:1.3" level="project" />
-    <orderEntry type="library" name="Gradle: net.sourceforge.htmlunit:htmlunit:2.21" level="project" />
     <orderEntry type="library" name="Gradle: net.java.dev.jna:jna:4.1.0" level="project" />
     <orderEntry type="library" name="Gradle: net.java.dev.jna:jna-platform:4.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.sourceforge.htmlunit:htmlunit:2.21" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty:3.5.7.Final" level="project" />
-    <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-api:2.53.1" level="project" />
     <orderEntry type="library" name="Gradle: xalan:xalan:2.7.2" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpmime:4.5.2" level="project" />
     <orderEntry type="library" name="Gradle: net.sourceforge.htmlunit:htmlunit-core-js:2.17" level="project" />
@@ -79,9 +70,9 @@
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.2.15.v20160210" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.2.15.v20160210" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-common:9.2.15.v20160210" level="project" />
-    <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.2.15.v20160210" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="appium-gradle-getting-started_main" />
 </module>

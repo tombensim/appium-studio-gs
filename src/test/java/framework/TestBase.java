@@ -8,24 +8,31 @@ package framework;
 import com.experitest.appium.SeeTestAndroidDriver;
 import com.experitest.appium.SeeTestCapabilityType;
 import com.experitest.appium.SeeTestIOSDriver;
+import com.experitest.manager.client.PManager;
+import com.experitest.manager.testng.ManagerITestListener;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.remote.CapabilityType;
+import jdk.internal.dynalink.linker.MethodHandleTransformer;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
-import org.testng.Reporter;
 import org.testng.annotations.*;
 import utils.AppiumStudioClient;
+import utils.Utils;
 
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
-import static framework.LogListener.LOG_TO_SOUT;
 
 /**
  * Created by tom.ben-simhon on 12/26/2016.
@@ -33,97 +40,126 @@ import static framework.LogListener.LOG_TO_SOUT;
  * For the SeeTestDrivers
  */
 
-@Listeners(LogListener.class)
+@Listeners({TestNGLogger.class, ManagerITestListener.class})
 public class TestBase {
 
+    public static final String PATH_TO_APK = System.getProperty("user.dir")+ File.separator + "apps" + File.separator + "eribank.apk";
+//    public static final String PATH_TO_RESOURCES;
+
     private static final String DEFAULT_SUITE_OS = "android";
+    protected Logger log;
 
+    protected PManager reporteClient = PManager.getInstance();
+    protected  AppiumStudioClient apc; // Appium Studio Client
     //Grid configurations
-    private static final String USERNAME = "tom";
-    private static final String PASSWORD = "xioN2401";
-    private static final String PROJECT_NAME = "Default";
-    private static final String USE_GRID = "false";
-
-    private DesiredCapabilities testSuiteCaps;
     protected AppiumDriver<MobileElement> driver;
 
-    private Map<String, ITestNGMethod> methodMap;
     //Appium Studio parameters
-    protected static final String SERVER_URL = "http://localhost:8889";
-    //
-    private String testName;
-    private String reportDirectory;
-    private String reportFormat;
+    protected static final String LOCAL_SERVER_URL = "http://localhost:4723";
+    protected static final String REMOTE_SERVER_URL = "http://192.168.1.210";
 
+    public static final String REPORTER_URL = "cloudreports.experitest.com:80";
+    public static String BUILD_ID = null;
+
+    private String reportDirectory = "reports";
+    private String reportFormat = "xml";
+
+    // Set Reporter configuration for Tests to follow
+    static {
+        System.setProperty("manager.url", REPORTER_URL);
+        Properties prop = new Properties();
+        InputStream input = null;
+        OutputStream output = null;
+        String buildPropFile = TestBase.class.getClassLoader().getResource("build.properties").getFile();
+        try {
+            input = new FileInputStream(buildPropFile);
+            prop.load(input);
+            BUILD_ID = String.valueOf(prop.getOrDefault("eribank.build.id", 999999));
+            int buildid = Integer.parseInt(BUILD_ID) + 1;
+            prop.setProperty("eribank.build.id", String.valueOf(buildid));
+            input.close();
+            output = new FileOutputStream(buildPropFile);
+            prop.store(output,null);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            if (input != null) {
+                try {
+                    input.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (output !=null) {
+                try {
+                    output.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    private URL serverURL;
 
     @Parameters({"os", "grid"})
-    @BeforeTest
+    @BeforeClass
     public void setUp(final ITestContext context,
                       @Optional(DEFAULT_SUITE_OS) String os,
                       @Optional("false") boolean useGrid) throws MalformedURLException {
+        log = LoggerFactory.getLogger(context.getName());
+        log.info("Setting Appium Studio Client for test : {}" , context.getName());
+        serverURL = useGrid ? new URL(REMOTE_SERVER_URL) : new URL(LOCAL_SERVER_URL);
+        log.info("Appium Studio Server URL :  {}",serverURL.toString()) ;
 
-        methodMap = mapMethodNamesToTestNGmethods(context);
-        URL url = new URL(SERVER_URL);
-        Reporter.log("Setting Appium Studio Client for test : " + testName, 2, LOG_TO_SOUT);
-        AppiumStudioClient studioClient = new AppiumStudioClient(url, context.getName());
+        DesiredCapabilities dc = new DesiredCapabilities();
+        dc.setCapability(MobileCapabilityType.UDID, "c4fcccee");
+        dc.setCapability(MobileCapabilityType.APP, PATH_TO_APK);
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+        dc.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, true);
+        driver = new SeeTestAndroidDriver<>(new URL(LOCAL_SERVER_URL), dc);
+        driver.quit();
 
-        String connectedDevices = studioClient.getConnectedDevices();
-        Reporter.log(connectedDevices, true);
 
-
-        // Device Capabilities
-        testSuiteCaps = new DesiredCapabilities();
-        testSuiteCaps.setCapability(CapabilityType.PLATFORM, os);
-        testSuiteCaps.setCapability(MobileCapabilityType.DEVICE_NAME, os + "Device");
-
-        //Reporting Configurations for Appium Studio Reporting
-//        if (generateReport) {
-//            testSuiteCaps.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
-//            testSuiteCaps.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
-//            testSuiteCaps.setCapability(SeeTestCapabilityType.TEST_NAME, testName);
-//        }
-        //Grid Connection configuration
-
-        testSuiteCaps.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID, USE_GRID);
-        testSuiteCaps.setCapability(SeeTestCapabilityType.USERNAME, USERNAME);
-        testSuiteCaps.setCapability(SeeTestCapabilityType.PASSWORD, PASSWORD);
-        testSuiteCaps.setCapability(SeeTestCapabilityType.PROJECT_NAME, PROJECT_NAME);
-
-        Reporter.log("DEBUG : " + context.getCurrentXmlTest().getClasses().toString(), true);
-    }
-
-    private Map<String, ITestNGMethod> mapMethodNamesToTestNGmethods(ITestContext context) {
-        Map<String, ITestNGMethod> map = new HashMap<String, ITestNGMethod>();
-        ITestNGMethod[] allTestMethods = context.getAllTestMethods();
-        for (int i = 0; i < allTestMethods.length; i++) {
-            map.put(allTestMethods[i].getMethodName(), allTestMethods[i]);
-        }
-        return map;
     }
 
     @BeforeMethod
     public void setUpBeforeMethod(Method m) throws Exception {
-//        Reporter.log (String.format (BEFORE_METHOD, m.getName ()), LOG_TO_SOUT);
-        CapabilitiesManager cm = new CapabilitiesManager(testSuiteCaps);
-        String packageName = methodMap.get(m.getName()).getRealClass().getPackage().getName();
-        testSuiteCaps.merge(cm.getTestCapabiliesForPackage(packageName));
 
-        URL url = new URL(SERVER_URL);
-        //Driver initialization
-        driver = testSuiteCaps.getCapability(CapabilityType.PLATFORM).equals("android") ?
-                new SeeTestAndroidDriver<MobileElement>(url, testSuiteCaps) :
-                new SeeTestIOSDriver<MobileElement>(url, testSuiteCaps);
+        reporteClient.addProperty("type","eribank");
+        reporteClient.addProperty("eribank.build.id",BUILD_ID);
+
+        DesiredCapabilities dc = new DesiredCapabilities();
+        dc.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
+        dc.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
+        dc.setCapability(SeeTestCapabilityType.TEST_NAME, m.getName());
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+        dc.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, true);
+        driver = new SeeTestAndroidDriver<>(serverURL, dc);
+
+        apc = Utils.getAppiumClient(driver);
     }
 
     @AfterMethod
     public void tearDownMethod(Method m) {
-        driver.quit();
+        String reportFolder =  Utils.generateReport(driver);
+        reporteClient.addReportFolder(reportFolder);
+
+        log.info("Report Folder : {}",reportFolder);
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown() {
-        if (driver != null)
-            driver.quit();
+        log.info("FINISHED : Execution for Class");
+    }
+
+    private Map<String, ITestNGMethod> mapMethodNamesToTestNGmethods(ITestContext context) {
+        Map<String, ITestNGMethod> map = new HashMap<>();
+        ITestNGMethod[] allTestMethods = context.getAllTestMethods();
+        Arrays.stream(allTestMethods).forEach(tm -> map.put(tm.getMethodName(), tm));
+        return map;
     }
 }
-

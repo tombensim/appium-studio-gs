@@ -13,7 +13,6 @@ import app.pages.LoginPage;
  * Created by tom.ben-simhon on 12/27/2016.
  */
 
-
 public class LoginTest extends TestBase {
     //Class private members
     private static final String VALID_USER = "company";
@@ -34,9 +33,10 @@ public class LoginTest extends TestBase {
     public void testFailToLoginWithInvalidCreds() throws InterruptedException {
         loginPage.login(INVALID_USER,INVALID_PASSWORD);
     }
-    @AfterMethod
-    public void tearDownLoginTests()
-    {
-        driver.quit();
+    @Test void testFailToLoginThreeTime() throws InterruptedException {
+        for (int i = 0; i <2 ; i++) {
+        loginPage.login(INVALID_USER,INVALID_PASSWORD);
+        loginPage.closeFailDialog();
+        }
     }
 }

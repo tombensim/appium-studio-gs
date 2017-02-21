@@ -9,6 +9,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import org.openqa.selenium.By;
 
 
 import java.util.NoSuchElementException;
@@ -28,10 +29,9 @@ public class LoginPage extends BasePage{
     protected MobileElement loginButton;
     
     public LoginPage(AppiumDriver driver) {
-		super(driver);
+        super(driver);
 	}
     // Page methods
-
     /*
      Tries to login to the application
     -  @params Creds, Username and Password
@@ -41,6 +41,10 @@ public class LoginPage extends BasePage{
         passwordField.sendKeys(password);
 		loginButton.click();
 		Thread.sleep(1000);
+    }
+    public void closeFailDialog()
+    {
+        driver.findElement(By.xpath("//*[contains(@text,'Close')]")).click();
     }
 
 }

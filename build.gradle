@@ -5,20 +5,6 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
-//sourceSets {
-//    main {
-//        java {
-//            srcDirs = ['src/java']
-//        }
-//        resources {
-//            srcDirs = ['src/resources']
-//        }
-//        test {
-//            testDirs = ['src/test']
-//        }
-//    }
-//}
-
 repositories {
     mavenCentral()
     maven {
@@ -27,10 +13,11 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.testng', name: 'testng', version: '6.8'
-    compile group: 'com.experitest', name: 'dimappium', version: '10.4.999'
-    testCompile group: 'org.testng', name: 'testng', version: '6.8'
-    testCompile group: 'com.experitest', name: 'dimappium', version: '10.4.999'
+    compile group: 'com.experitest', name: 'dimappium', version: '10.5.5'
+    compile group: 'org.testng', name: 'testng', version:'6.9.10'
+    compile 'org.slf4j:slf4j-api:1.7.23'
+    compile 'org.slf4j:slf4j-log4j12:1.7.7'
+    compile 'com.experitest:manager-client:1.6'
 
 }
 
@@ -46,6 +33,6 @@ sourceSets {
 test {
     useTestNG() {
         // runlist to executed. path is relative to current folder
-        suites 'src/test/resources/testng.xml'
+        suites 'src/test/eribank.tests.xml'
     }
 }
