@@ -6,25 +6,12 @@
 <suite name="EriBank Suite Tests" verbose="1"  parallel="tests" thread-count="10" >
 
 
-    <!--<test name="Authentication Android" >-->
-        <!--<parameter name="DeviceOS" value="android"></parameter>-->
-        <!--<classes>-->
-            <!--<class name="app.tests.LoginTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-
-    <!--<test name="Authentication iOS" >-->
-        <!--<parameter name="DeviceOS" value="ios"></parameter>-->
-        <!--<classes>-->
-            <!--<class name="app.tests.LoginTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-
     <test name="Authentication Android Grid" >
         <parameter name="DeviceOS" value="android"></parameter>
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
@@ -33,6 +20,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
@@ -41,6 +29,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
@@ -49,6 +38,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
     <test name="Authentication Android 3 Grid" >
@@ -56,6 +46,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
@@ -64,6 +55,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
@@ -72,6 +64,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
@@ -80,6 +73,7 @@
         <parameter name="useGrid" value="true"></parameter>
         <classes>
             <class name="app.tests.LoginTest"/>
+            <class name="app.tests.MakePaymentTest"/>
         </classes>
     </test>
 
