@@ -101,6 +101,7 @@ public class TestBase {
         deviceName = Utils.getAppiumClient(driver).getDeviceProperty("device.name").split(":")[1];
         HashMap<String,String> parameters = new HashMap<>();
         parameters.put("device.name",deviceName);
+        parameters.putAll(context.getCurrentXmlTest().getAllParameters());
         context.getCurrentXmlTest().setParameters(parameters);
 
         driver.quit();
@@ -108,7 +109,7 @@ public class TestBase {
     }
 
     @BeforeClass
-    public void setUp(final ITestContext context) throws MalformedURLException {
+    public void setUpClass(final ITestContext context) throws MalformedURLException {
         testOS = context.getCurrentXmlTest().getParameter("DeviceOS");
         useGrid = Boolean.parseBoolean(context.getCurrentXmlTest().getParameter("useGrid"));
         deviceName = context.getCurrentXmlTest().getParameter("device.name");
