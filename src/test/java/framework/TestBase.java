@@ -134,6 +134,7 @@ public class TestBase {
         dc.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID,useGrid);
         dc.setCapability(SeeTestCapabilityType.USERNAME,"admin");
         dc.setCapability(SeeTestCapabilityType.PASSWORD,"Experitest2012");
+        dc.setCapability(SeeTestCapabilityType.TEST_NAME,"Setup Suite");
         dc.setCapability(MobileCapabilityType.APP, appPath);
         dc.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, true);
 
