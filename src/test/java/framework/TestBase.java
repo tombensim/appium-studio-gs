@@ -144,7 +144,6 @@ public class TestBase {
 
     @BeforeMethod
     public void setUpBeforeMethod(Method m) throws Exception {
-
         reporteClient.addProperty("type","eribank");
         reporteClient.addProperty("jenkins.eribank.build.id",BUILD_ID);
 

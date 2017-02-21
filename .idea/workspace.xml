@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6121f7b0-0161-42e8-949f-52e8a0a97387" name="Default" comment="Changed to Grid Configuration and Added IPA">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_fastjson_boon_0_33.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/EriBankO.ipa" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/EriBank.ipa" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/appium-gradle-getting-started_test.iml" />
+    <list default="true" id="6121f7b0-0161-42e8-949f-52e8a0a97387" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/eribank.tests.xml" afterPath="$PROJECT_DIR$/src/test/eribank.tests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/LoginTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/framework/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/framework/TestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
     </list>
     <list id="326f3754-22fe-40bb-927a-e190b5efac43" name="Rejected commit: Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -143,15 +134,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="151" column="77" lean-forward="true" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+            <state relative-caret-position="1434">
+              <caret line="145" column="62" lean-forward="false" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
               <folding>
                 <element signature="docComment;class#TestBase#0" expanded="true" />
-                <element signature="e#6807#6808#0" expanded="true" />
-                <element signature="e#6865#6866#0" expanded="true" />
+                <element signature="e#6806#6807#0" expanded="true" />
+                <element signature="e#6864#6865#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,11 +212,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eribank.tests.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="eribank.tests.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+            <state relative-caret-position="34">
+              <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -735,8 +726,8 @@
         <option value="$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/build/resources/test/build.properties" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/eribank.tests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/framework/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/eribank.tests.xml" />
       </list>
     </option>
   </component>
@@ -1662,7 +1653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487689103396</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changed to Grid Configuration and Added IPA">
+      <created>1487695274623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1487695274623</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1767,7 +1765,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/framework/TestBase.java</url>
-          <line>161</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -1815,8 +1813,8 @@
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#TestBase#0" expanded="true" />
-            <element signature="e#6807#6808#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
+            <element signature="e#6806#6807#0" expanded="true" />
+            <element signature="e#6864#6865#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2134,52 +2132,52 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487695213367" expanded="true" signature="148921:148938" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="148921:148956" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="148921:148969" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="148921:148984" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149019:151895" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149032:151880" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149086:149381" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149105:149366" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149168:149346" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149208:149312" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149229:149290" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149414:149720" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149433:149705" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149507:149685" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149547:149651" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149568:149629" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149771:150088" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149790:150073" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149875:150053" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149915:150019" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="149936:149997" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150131:150437" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150150:150422" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150224:150402" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150264:150368" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150285:150346" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150488:150820" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150507:150805" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150607:150785" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150647:150751" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150668:150729" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150855:151167" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150874:151152" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150948:151132" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="150988:151098" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151009:151076" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151219:151553" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151238:151538" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151340:151518" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151380:151484" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151401:151462" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151601:151866" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151620:151851" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151653:151831" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151693:151797" ph="..." />
-            <marker date="1487695213367" expanded="true" signature="151714:151775" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143211:143228" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143211:143246" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143211:143259" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143211:143274" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143309:146185" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143322:146170" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143376:143671" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143395:143656" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143458:143636" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143498:143602" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143519:143580" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143704:144010" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143723:143995" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143797:143975" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143837:143941" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="143858:143919" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144061:144378" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144080:144363" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144165:144343" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144205:144309" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144226:144287" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144421:144727" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144440:144712" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144514:144692" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144554:144658" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144575:144636" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144778:145110" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144797:145095" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144897:145075" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144937:145041" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="144958:145019" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145145:145457" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145164:145442" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145238:145422" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145278:145388" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145299:145366" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145509:145843" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145528:145828" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145630:145808" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145670:145774" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145691:145752" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145891:146156" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145910:146141" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145943:146121" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="145983:146087" ph="..." />
+            <marker date="1487695532742" expanded="true" signature="146004:146065" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2244,14 +2242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/EriBankO.ipa">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2262,13 +2252,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="151" column="77" lean-forward="true" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+        <state relative-caret-position="1434">
+          <caret line="145" column="62" lean-forward="false" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
           <folding>
             <element signature="docComment;class#TestBase#0" expanded="true" />
-            <element signature="e#6807#6808#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
+            <element signature="e#6806#6807#0" expanded="true" />
+            <element signature="e#6864#6865#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
