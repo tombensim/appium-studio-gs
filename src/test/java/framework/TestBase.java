@@ -131,7 +131,7 @@ public class TestBase {
         dc.setCapability(SeeTestCapabilityType.USERNAME, "admin");
         dc.setCapability(SeeTestCapabilityType.PASSWORD, "Experitest2012");
 
-        dc.setCapability(SeeTestCapabilityType.ST_DEVICE_NAME, deviceName);
+//        dc.setCapability(SeeTestCapabilityType.ST_DEVICE_NAME, deviceName);
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBankO");

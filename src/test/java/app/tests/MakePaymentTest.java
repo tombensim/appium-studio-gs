@@ -9,7 +9,6 @@ import app.pages.HomePage;
 import app.pages.LoginPage;
 import app.pages.MakePaymentPage;
 import framework.TestBase;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
