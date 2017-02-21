@@ -114,7 +114,6 @@ public class TestBase {
         log.info("Appium Studio Server URL :  {}",serverURL.toString()) ;
 
         DesiredCapabilities dc = new DesiredCapabilities();
-        dc.setCapability(MobileCapabilityType.UDID, "c4fcccee");
         dc.setCapability(MobileCapabilityType.APP, PATH_TO_APK);
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
