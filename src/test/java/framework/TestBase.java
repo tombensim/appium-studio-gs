@@ -17,18 +17,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestContext;
-import org.testng.ITestNGMethod;
 import org.testng.annotations.*;
 import utils.AppiumStudioClient;
 import utils.Utils;
-
-import java.io.*;
+import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 
 /**
@@ -103,6 +99,10 @@ public class TestBase {
 
         driver = Utils.getDriver(os, serverURL, dc);
         deviceName = Utils.getAppiumClient(driver).getDeviceProperty("device.name").split(":")[1];
+        HashMap<String,String> parameters = new HashMap<>();
+        parameters.put("device.name",deviceName);
+        context.getCurrentXmlTest().setParameters(parameters);
+
         driver.quit();
 
     }
@@ -111,6 +111,7 @@ public class TestBase {
     public void setUp(final ITestContext context) throws MalformedURLException {
         testOS = context.getCurrentXmlTest().getParameter("DeviceOS");
         useGrid = Boolean.parseBoolean(context.getCurrentXmlTest().getParameter("useGrid"));
+        deviceName = context.getCurrentXmlTest().getParameter("device.name");
         serverURL = useGrid ? new URL(REMOTE_SERVER_URL) : new URL(LOCAL_SERVER_URL);
 
         log = LoggerFactory.getLogger(context.getName());
@@ -131,7 +132,7 @@ public class TestBase {
         dc.setCapability(SeeTestCapabilityType.USERNAME, "admin");
         dc.setCapability(SeeTestCapabilityType.PASSWORD, "Experitest2012");
 
-//        dc.setCapability(SeeTestCapabilityType.ST_DEVICE_NAME, deviceName);
+        dc.setCapability(SeeTestCapabilityType.ST_DEVICE_NAME, deviceName);
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBankO");
@@ -145,7 +146,6 @@ public class TestBase {
     public void tearDownMethod(Method m) {
         String reportFolder = Utils.generateReport(driver);
         reporteClient.addReportFolder(reportFolder);
-
         log.info("Report Folder : {}", reportFolder);
     }
 
@@ -154,10 +154,5 @@ public class TestBase {
         log.info("FINISHED : Execution for Class");
     }
 
-    private Map<String, ITestNGMethod> mapMethodNamesToTestNGmethods(ITestContext context) {
-        Map<String, ITestNGMethod> map = new HashMap<>();
-        ITestNGMethod[] allTestMethods = context.getAllTestMethods();
-        Arrays.stream(allTestMethods).forEach(tm -> map.put(tm.getMethodName(), tm));
-        return map;
-    }
+
 }
