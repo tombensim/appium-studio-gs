@@ -72,9 +72,9 @@ public class TestBase {
     static {
         System.setProperty("manager.url", REPORTER_URL);
 
-        if (System.getProperty("eribank.build.id") != null)
+        if (System.getenv("eribank.build.id") != null)
         {
-            BUILD_ID = System.getProperty("eribank.build.id");
+            BUILD_ID = System.getenv("eribank.build.id");
         }
         else {
             Properties prop = new Properties();
