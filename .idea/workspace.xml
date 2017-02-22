@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6121f7b0-0161-42e8-949f-52e8a0a97387" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/framework/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/framework/TestBase.java" />
     </list>
@@ -137,10 +138,14 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="96" column="65" lean-forward="false" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+            <state relative-caret-position="255">
+              <caret line="141" column="40" lean-forward="false" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#TestBase#0" expanded="true" />
+                <element signature="e#2018#2054#0" expanded="true" />
+                <element signature="e#6402#6403#0" expanded="true" />
+                <element signature="e#6460#6461#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -990,7 +995,7 @@
     <property name="project.structure.proportion" value="0.10752688" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="bui&#9;FILE&#9;file://C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/build.gradle&#10;TestBas&#9;FILE&#9;file://C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/java/app/TestBase.java" />
-    <property name="extract.method.default.visibility" value="protected" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1746,7 +1751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487805177867</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="continue setup travis, changed to jdk 8">
+      <created>1487805403491</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1487805403491</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1858,20 +1870,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/framework/TestBase.java</url>
-          <line>138</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/framework/TestBase.java</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-defaults>
         <breakpoint suspend="THREAD" type="java-line" />
       </breakpoints-defaults>
@@ -2220,14 +2218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -2244,12 +2234,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="96" column="65" lean-forward="false" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+        <state relative-caret-position="255">
+          <caret line="141" column="40" lean-forward="false" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#TestBase#0" expanded="true" />
+            <element signature="e#2018#2054#0" expanded="true" />
+            <element signature="e#6402#6403#0" expanded="true" />
+            <element signature="e#6460#6461#0" expanded="true" />
           </folding>
         </state>
       </provider>

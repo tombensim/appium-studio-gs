@@ -20,11 +20,13 @@ import org.testng.ITestContext;
 import org.testng.annotations.*;
 import utils.AppiumStudioClient;
 import utils.Utils;
+
 import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -53,18 +55,20 @@ public class TestBase {
     protected static final String GRID_SERVER_URL = "http://sales.experitest.com";
 
     public static final String REPORTER_URL = "cloudreports.experitest.com:80";
+    @SuppressWarnings("FieldCanBeLocal")
     private String reportDirectory = "reports";
     private String reportFormat = "xml";
 
-    private String testOS = null;
+    private String deviceOS = null;
     private boolean useGrid;
     String deviceName;
-    private URL serverURL;
+    protected URL serverURL;
 
     protected static String BUILD_ID = null;
     private static String typeTag;
     private static String griduser;
     private static String gridpass;
+
     // Set Reporter configuration for Tests to follow
     static {
         System.setProperty("manager.url", REPORTER_URL);
@@ -76,34 +80,32 @@ public class TestBase {
 
     @Parameters({"DeviceOS", "useGrid"})
     @BeforeTest
-    public void setUpTest(final ITestContext context,
-                          @Optional(DEFAULT_SUITE_OS) String os,
-                          @Optional("false") boolean useGrid) throws MalformedURLException {
+    public void setUpTest(final ITestContext context) throws MalformedURLException {
 
-        testOS = context.getCurrentXmlTest().getParameter("DeviceOS");
-        log = LoggerFactory.getLogger(context.getName());
-        log.warn("{} TEST OS : {}", context.getCurrentXmlTest().getName(), testOS);
-        this.useGrid = useGrid;
+        deviceOS = (context.getCurrentXmlTest().getParameter("DeviceOS") != null) ?
+                context.getCurrentXmlTest().getParameter("DeviceOS") :
+                DEFAULT_SUITE_OS;
 
-        log.info("Setting Appium Studio Client for test : {} with OS {}", context.getName(), os);
-
+        // don't use grid for local or debug execution
+        useGrid = (context.getCurrentXmlTest().getParameter("useGrid") != null);
+        String appPath = deviceOS.equals("android") ? PATH_TO_APK : PATH_TO_IPA;
         serverURL = useGrid ? new URL(GRID_SERVER_URL) : new URL(LOCAL_SERVER_URL);
+
+        log = LoggerFactory.getLogger(context.getName());
+        log.info("Setting Appium Studio Client for test : {} with OS {}", context.getName(), deviceOS);
         log.info("Appium Studio Server URL :  {}", serverURL.toString());
-        String appPath = os.equals("android") ? PATH_TO_APK : PATH_TO_IPA;
+
 
         DesiredCapabilities dc = new DesiredCapabilities();
-        dc.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID, useGrid);
-        dc.setCapability(SeeTestCapabilityType.USERNAME, griduser);
-        dc.setCapability(SeeTestCapabilityType.PASSWORD, gridpass);
+        dc.merge(getGridCapabilities());
         dc.setCapability(SeeTestCapabilityType.TEST_NAME, "Setup Suite");
         dc.setCapability(MobileCapabilityType.APP, appPath);
         dc.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, true);
+        driver = Utils.getDriver(deviceOS, serverURL, dc);
 
-        driver = Utils.getDriver(os, serverURL, dc);
         deviceName = Utils.getAppiumClient(driver).getDeviceProperty("device.name").split(":")[1];
-        HashMap<String,String> parameters = new HashMap<>();
-        parameters.put("device.name",deviceName);
-        parameters.putAll(context.getCurrentXmlTest().getAllParameters());
+        Map<String, String> parameters = context.getCurrentXmlTest().getTestParameters();
+        parameters.put("device.name", deviceName);
         context.getCurrentXmlTest().setParameters(parameters);
 
         driver.quit();
@@ -112,17 +114,18 @@ public class TestBase {
 
     @BeforeClass
     public void setUpClass(final ITestContext context) throws MalformedURLException {
-        testOS = context.getCurrentXmlTest().getParameter("DeviceOS");
+        deviceOS = context.getCurrentXmlTest().getParameter("DeviceOS");
         useGrid = Boolean.parseBoolean(context.getCurrentXmlTest().getParameter("useGrid"));
         deviceName = context.getCurrentXmlTest().getParameter("device.name");
         serverURL = useGrid ? new URL(GRID_SERVER_URL) : new URL(LOCAL_SERVER_URL);
 
         log = LoggerFactory.getLogger(context.getName());
-        log.info("Setting Appium Studio Client for class : {} with OS {}", context.getCurrentXmlTest(), testOS);
+        log.info("Setting Appium Studio Client for class : {} with OS {}", context.getCurrentXmlTest(), deviceOS);
     }
 
     @BeforeMethod
     public void setUpBeforeMethod(Method m) throws Exception {
+        // Add reported basic properties
         reporteClient.addProperty("type", typeTag);
         reporteClient.addProperty("jenkins.eribank.build.id", BUILD_ID);
 
@@ -130,17 +133,13 @@ public class TestBase {
         dc.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
         dc.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
         dc.setCapability(SeeTestCapabilityType.TEST_NAME, m.getName());
-
-        dc.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID, useGrid);
-        dc.setCapability(SeeTestCapabilityType.USERNAME, "admin");
-        dc.setCapability(SeeTestCapabilityType.PASSWORD, "Experitest2012");
-
+        dc.merge(getGridCapabilities());
         dc.setCapability(SeeTestCapabilityType.ST_DEVICE_NAME, deviceName);
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBankO");
         dc.setCapability(SeeTestCapabilityType.INSTRUMENT_APP, true);
-        driver = Utils.getDriver(testOS, serverURL, dc);
+        driver = Utils.getDriver(deviceOS, serverURL, dc);
 
         apc = Utils.getAppiumClient(driver);
     }
@@ -155,6 +154,14 @@ public class TestBase {
     @AfterClass
     public void tearDown() {
         log.info("FINISHED : Execution for Class");
+    }
+
+    private DesiredCapabilities getGridCapabilities() {
+        DesiredCapabilities dc = new DesiredCapabilities();
+        dc.setCapability(SeeTestCapabilityType.USE_REMOTE_GRID, useGrid);
+        dc.setCapability(SeeTestCapabilityType.USERNAME, griduser);
+        dc.setCapability(SeeTestCapabilityType.PASSWORD, gridpass);
+        return dc;
     }
 
 
