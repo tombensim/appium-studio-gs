@@ -1,6 +1,6 @@
 language: java
 sudo: required
-before_script:
+before_install:
 - ls -alr
 - chmod +x gradlew
 before_script:
