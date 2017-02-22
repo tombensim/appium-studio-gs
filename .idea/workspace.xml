@@ -150,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -1712,7 +1712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487802901316</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="continue setup travis, changed to jdk 8">
+      <created>1487803115886</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1487803115886</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1819,7 +1826,8 @@
     <MESSAGE value="get device.name as parameter @BeforeClass" />
     <MESSAGE value="fixed all parameters" />
     <MESSAGE value="starting to setup travis ci" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting to setup travis ci" />
+    <MESSAGE value="continue setup travis, changed to jdk 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue setup travis, changed to jdk 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2205,7 +2213,7 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
         </state>
       </provider>
