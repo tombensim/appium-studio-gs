@@ -78,7 +78,6 @@ public class TestBase {
         typeTag = BUILD_ID.equals("99999999") ? "eribank.debug" : "eribank";
     }
 
-    @Parameters({"DeviceOS", "useGrid"})
     @BeforeTest
     public void setUpTest(final ITestContext context) throws MalformedURLException {
 
