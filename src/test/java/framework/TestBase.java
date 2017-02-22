@@ -36,39 +36,41 @@ import java.util.HashMap;
 @Listeners({TestNGLogger.class, ManagerITestListener.class})
 public class TestBase {
 
+    // Path to Applications
     public static final String PATH_TO_APK = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribank.apk";
     public static final String PATH_TO_IPA = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribankO.ipa";
-//    public static final String PATH_TO_RESOURCES;
 
-    private static final String DEFAULT_SUITE_OS = "android";
     protected Logger log;
 
     protected PManager reporteClient = PManager.getInstance();
     protected AppiumStudioClient apc; // Appium Studio Client
-    //Grid configurations
     protected AppiumDriver<MobileElement> driver;
+    //Grid configurations
 
     //Appium Studio parameters
+    private static final String DEFAULT_SUITE_OS = "android";
     protected static final String LOCAL_SERVER_URL = "http://localhost:4723";
-    protected static final String REMOTE_SERVER_URL = "http://192.168.2.13:8090";
+    protected static final String GRID_SERVER_URL = "http://sales.experitest.com";
 
     public static final String REPORTER_URL = "cloudreports.experitest.com:80";
-    public static String BUILD_ID = null;
-
     private String reportDirectory = "reports";
     private String reportFormat = "xml";
 
     private String testOS = null;
     private boolean useGrid;
     String deviceName;
-
     private URL serverURL;
-    private static String typeTag;
 
+    protected static String BUILD_ID = null;
+    private static String typeTag;
+    private static String griduser;
+    private static String gridpass;
     // Set Reporter configuration for Tests to follow
     static {
         System.setProperty("manager.url", REPORTER_URL);
         BUILD_ID = System.getenv("eribank.build.id") != null ? System.getenv("eribank.build.id") : "99999999";
+        griduser = System.getenv("griduser");
+        gridpass = System.getenv("gridpass");
         typeTag = BUILD_ID.equals("99999999") ? "eribank.debug" : "eribank";
     }
 
@@ -85,7 +87,7 @@ public class TestBase {
 
         log.info("Setting Appium Studio Client for test : {} with OS {}", context.getName(), os);
 
-        serverURL = useGrid ? new URL(REMOTE_SERVER_URL) : new URL(LOCAL_SERVER_URL);
+        serverURL = useGrid ? new URL(GRID_SERVER_URL) : new URL(LOCAL_SERVER_URL);
         log.info("Appium Studio Server URL :  {}", serverURL.toString());
         String appPath = os.equals("android") ? PATH_TO_APK : PATH_TO_IPA;
 
@@ -113,7 +115,7 @@ public class TestBase {
         testOS = context.getCurrentXmlTest().getParameter("DeviceOS");
         useGrid = Boolean.parseBoolean(context.getCurrentXmlTest().getParameter("useGrid"));
         deviceName = context.getCurrentXmlTest().getParameter("device.name");
-        serverURL = useGrid ? new URL(REMOTE_SERVER_URL) : new URL(LOCAL_SERVER_URL);
+        serverURL = useGrid ? new URL(GRID_SERVER_URL) : new URL(LOCAL_SERVER_URL);
 
         log = LoggerFactory.getLogger(context.getName());
         log.info("Setting Appium Studio Client for class : {} with OS {}", context.getCurrentXmlTest(), testOS);
