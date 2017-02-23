@@ -1,7 +1,7 @@
 package web.tests;
 
 
-import framework.TestBase;
+import framework.ExperiTestBase;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import web.pages.GooglePage;
@@ -9,7 +9,7 @@ import web.pages.GooglePage;
 /**
  * Created by tom.ben-simhon on 1/11/2017.
  */
-public class SearchGoogleTest  extends TestBase {
+public class SearchGoogleExperiTest extends ExperiTestBase {
 
     public static final String GOOGLE_URL = "https://www.google.com";
     GooglePage googlePage;

@@ -11,7 +11,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.AppiumStudioClient;
-import utils.Utils;
+import utils.STDUtils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,12 +25,10 @@ public abstract class BasePage {
 
     protected BasePage(AppiumDriver driver){
         this.driver = driver;
-        apc = Utils.getAppiumClient(driver);
+        apc = STDUtils.getAppiumClient(driver);
         wda = new WebDriverWait(driver, TIME_OUT_WAIT_IN_SECONDS);
-        Utils.setLogger(driver,Utils.getLogger(false));
         apc.sleep(1000);
         PageFactory.initElements(new AppiumFieldDecorator(driver, 10, TimeUnit.SECONDS), this);
-        Utils.setLogger(driver,Utils.getLogger(true));
     }
     //public abstract void verifyPage();
 }

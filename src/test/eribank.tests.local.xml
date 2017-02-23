@@ -9,16 +9,16 @@
     <test name="Authentication Android">
         <parameter name="DeviceOS" value="android"></parameter>
         <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
+            <class name="app.tests.LoginExperiTest"/>
+            <class name="app.tests.MakePaymentExperiTest"/>
         </classes>
     </test>
 
     <test name="Authentication iOS">
         <parameter name="DeviceOS" value="ios"></parameter>
         <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
+            <class name="app.tests.LoginExperiTest"/>
+            <class name="app.tests.MakePaymentExperiTest"/>
         </classes>
     </test>
 

@@ -10,8 +10,8 @@
         <parameter name="DeviceOS" value="android"></parameter>
         <parameter name="useGrid" value="true"></parameter>
         <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
+            <class name="app.tests.LoginExperiTest"/>
+            <class name="app.tests.MakePaymentExperiTest"/>
         </classes>
     </test>
 
@@ -19,62 +19,62 @@
         <parameter name="DeviceOS" value="ios"></parameter>
         <parameter name="useGrid" value="true"></parameter>
         <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
+            <class name="app.tests.LoginExperiTest"/>
+            <class name="app.tests.MakePaymentExperiTest"/>
         </classes>
     </test>
 
-    <test name="Authentication Android 2 Grid" >
-        <parameter name="DeviceOS" value="android"></parameter>
-        <parameter name="useGrid" value="true"></parameter>
-        <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
-        </classes>
-    </test>
+    <!--<test name="Authentication Android 2 Grid" >-->
+        <!--<parameter name="DeviceOS" value="android"></parameter>-->
+        <!--<parameter name="useGrid" value="true"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginExperiTest"/>-->
+            <!--<class name="app.tests.MakePaymentExperiTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 
-    <test name="Authentication iOS 2 Grid" >
-        <parameter name="DeviceOS" value="ios"></parameter>
-        <parameter name="useGrid" value="true"></parameter>
-        <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
-        </classes>
-    </test>
-    <test name="Authentication Android 3 Grid" >
-        <parameter name="DeviceOS" value="android"></parameter>
-        <parameter name="useGrid" value="true"></parameter>
-        <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
-        </classes>
-    </test>
+    <!--<test name="Authentication iOS 2 Grid" >-->
+        <!--<parameter name="DeviceOS" value="ios"></parameter>-->
+        <!--<parameter name="useGrid" value="true"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginExperiTest"/>-->
+            <!--<class name="app.tests.MakePaymentExperiTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Authentication Android 3 Grid" >-->
+        <!--<parameter name="DeviceOS" value="android"></parameter>-->
+        <!--<parameter name="useGrid" value="true"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginExperiTest"/>-->
+            <!--<class name="app.tests.MakePaymentExperiTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 
-    <test name="Authentication iOS 3 Grid" >
-        <parameter name="DeviceOS" value="ios"></parameter>
-        <parameter name="useGrid" value="true"></parameter>
-        <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
-        </classes>
-    </test>
+    <!--<test name="Authentication iOS 3 Grid" >-->
+        <!--<parameter name="DeviceOS" value="ios"></parameter>-->
+        <!--<parameter name="useGrid" value="true"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginExperiTest"/>-->
+            <!--<class name="app.tests.MakePaymentExperiTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 
-    <test name="Authentication Android 4 Grid" >
-        <parameter name="DeviceOS" value="android"></parameter>
-        <parameter name="useGrid" value="true"></parameter>
-        <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
-        </classes>
-    </test>
+    <!--<test name="Authentication Android 4 Grid" >-->
+        <!--<parameter name="DeviceOS" value="android"></parameter>-->
+        <!--<parameter name="useGrid" value="true"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginExperiTest"/>-->
+            <!--<class name="app.tests.MakePaymentExperiTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 
-    <test name="Authentication iOS 4 Grid" >
-        <parameter name="DeviceOS" value="ios"></parameter>
-        <parameter name="useGrid" value="true"></parameter>
-        <classes>
-            <class name="app.tests.LoginTest"/>
-            <class name="app.tests.MakePaymentTest"/>
-        </classes>
-    </test>
+    <!--<test name="Authentication iOS 4 Grid" >-->
+        <!--<parameter name="DeviceOS" value="ios"></parameter>-->
+        <!--<parameter name="useGrid" value="true"></parameter>-->
+        <!--<classes>-->
+            <!--<class name="app.tests.LoginExperiTest"/>-->
+            <!--<class name="app.tests.MakePaymentExperiTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 
 </suite>

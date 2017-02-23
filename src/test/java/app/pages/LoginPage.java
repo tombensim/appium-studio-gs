@@ -54,9 +54,11 @@ public class LoginPage extends BasePage{
         return new HomePage(driver);
     }
 
-    public void closeFailDialog()
+    public boolean closeFailDialog()
     {
-        driver.findElement(By.xpath("//*[contains(@text,'Close') or contains(@text,'Dismiss')]")).click();
+        MobileElement close = driver.findElement(By.xpath("//*[contains(@text,'Close') or contains(@text,'Dismiss')]"));
+        close.click();
+        return true;
     }
 
 }

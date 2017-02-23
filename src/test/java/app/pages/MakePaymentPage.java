@@ -36,12 +36,16 @@ public class MakePaymentPage extends BasePage {
         super(driver);
     }
 
-    public boolean fillUserInfo()
+    public void fillUserInfo()
     {
         phone.sendKeys(PHONE_NUMBER);
         name.sendKeys(NAME);
         amount.sendKeys(AMOUNT);
+    }
+    public HomePage cancel()
+    {
+        apc.closeKeyboard();
         cancel.click();
-        return true;
+        return new HomePage(driver);
     }
 }
