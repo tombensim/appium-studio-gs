@@ -34,6 +34,7 @@ public class LoginExperiTest extends EribankTestBase {
     public void testLoginWithValidCreds() throws InterruptedException {
         loginPage.login(VALID_USER, VALID_PASSWORD);
         HomePage homePage = new HomePage(driver);
+        driver.context("WEBVIEW_1");
         Assert.assertTrue(homePage.getBalance().contains("$"), "Failed to reached the app home page");
     }
 

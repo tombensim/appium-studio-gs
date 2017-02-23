@@ -5,7 +5,6 @@
   -->
 <suite name="EriBank Suite Tests" verbose="1"  parallel="tests" thread-count="10" >
 
-
     <test name="Authentication Android Grid" >
         <parameter name="DeviceOS" value="android"></parameter>
         <parameter name="useGrid" value="true"></parameter>

@@ -43,6 +43,7 @@ public class HomePage extends BasePage{
 	{
         driver.context("WEBVIEW_1");
         balanceInfo = driver.findElement(By.xpath("//*[contains(@text,'balance')]"));
+        driver.context("NATIVE_APP");
 		return balanceInfo.getText();
 	}
     

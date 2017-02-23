@@ -12,6 +12,7 @@ import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.LoggerFactory;
+import org.testng.ITestClass;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 import utils.STDUtils;
@@ -25,10 +26,10 @@ import java.util.Map;
 public class EribankTestBase extends ExperiTestBase {
     // Path to Applications
     private static final String PATH_TO_APK = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribank.apk";
-    private static final String PATH_TO_IPA = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "eribankO.ipa";
+    private static final String PATH_TO_IPA = System.getProperty("user.dir") + File.separator + "apps" + File.separator + "EriBankO.ipa";
 
     //Appium Studio parameters
-    private static final String DEFAULT_SUITE_OS = "android";
+    private static final String DEFAULT_SUITE_OS = "ios";
     private static final String LOCAL_SERVER_URL = "http://localhost:4723";
     private static final String GRID_SERVER_URL = "http://sales.experitest.com";
 
@@ -42,9 +43,6 @@ public class EribankTestBase extends ExperiTestBase {
     private URL serverURL;
 
     private static final String typeTag = "eribank";
-
-
-
     /**
      * setUpTest method runs before a TestNG tagged test (<test>...</test>)
      * it will init test parameters and install the latest application build on the device before

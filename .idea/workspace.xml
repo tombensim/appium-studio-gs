@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6121f7b0-0161-42e8-949f-52e8a0a97387" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/apps/EriBankO.ipa" afterPath="$PROJECT_DIR$/apps/eribankO.ipa" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/apps/eribankO.ipa" afterPath="$PROJECT_DIR$/apps/EriBankO.ipa" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/eribank.tests.xml" afterPath="$PROJECT_DIR$/src/test/eribank.tests.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/pages/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/app/pages/HomePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java" />
     </list>
     <list id="326f3754-22fe-40bb-927a-e190b5efac43" name="Rejected commit: Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,6 +31,28 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="LoginExperiTest.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="201">
+                    <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+                    <folding>
+                      <element signature="docComment;class#LoginExperiTest#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExportTestResults" exportFormat="Xml" outputFolder="$PROJECT_DIR$" userTempatePath="" />
@@ -178,50 +205,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExperiTestBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="49" column="77" lean-forward="false" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
-              <folding>
-                <element signature="docComment;class#ExperiTestBase#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EribankTestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="120" column="19" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+            <state relative-caret-position="126">
+              <caret line="150" column="7" lean-forward="true" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
               <folding>
-                <element signature="e#0#6811#0" expanded="true" />
+                <element signature="e#0#6834#0" expanded="true" />
                 <element signature="docComment;method#setUpTest#0;class#EribankTestBase#0" expanded="true" />
                 <element signature="docComment;method#setUpClass#0;class#EribankTestBase#0" expanded="true" />
                 <element signature="docComment;method#setUpBeforeMethod#0;class#EribankTestBase#0" expanded="true" />
                 <element signature="docComment;method#tearDownMethod#0;class#EribankTestBase#0" expanded="true" />
                 <element signature="docComment;method#tearDown#0;class#EribankTestBase#0" expanded="true" />
+                <element signature="e#6771#6772#0" expanded="true" />
+                <element signature="e#6829#6830#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DelegatingMethodAccessorImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <file leaf-file-name="eribank.tests.local.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.local.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <file leaf-file-name="STDUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/STDUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <folding>
+                <element signature="docComment;class#STDUtils#0" expanded="true" />
+                <element signature="docComment;method#getAppiumClient#0;class#STDUtils#0" expanded="true" />
+                <element signature="docComment;method#generateReport#0;class#STDUtils#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakePaymentExperiTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="docComment;class#MakePaymentExperiTest#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -230,9 +273,31 @@
       <file leaf-file-name="eribank.tests.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-258">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppiumDriver.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.appium/java-client/4.1.2/6505c7dcf5af12fbf649daaed85653790712e12a/java-client-4.1.2-sources.jar!/io/appium/java_client/AppiumDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="556" column="44" lean-forward="false" selection-start-line="556" selection-start-column="44" selection-end-line="556" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#1015#1016#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -240,55 +305,23 @@
       <file leaf-file-name="LoginExperiTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            <state relative-caret-position="34">
+              <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
               <folding>
                 <element signature="docComment;class#LoginExperiTest#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/build.properties">
+      <file leaf-file-name="Assert.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/Assert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MakePaymentExperiTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="41">
+              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding>
-                <element signature="docComment;class#MakePaymentExperiTest#0" expanded="true" />
+                <element signature="e#2681#2682#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -797,8 +830,6 @@
         <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/build/resources/test/build.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/build.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/app/pages/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/eribank.tests.local.xml" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentTest.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
@@ -808,17 +839,24 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/EriBankTestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/MakePaymentPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/eribank.tests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/STDUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/eribank.tests.local.xml" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/app/pages/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/eribank.tests.xml" />
       </list>
     </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="$PROJECT_DIR$/src/test/eribank.tests.local.xml" />
+    </enabled-run-configurations>
   </component>
   <component name="MavenProjectNavigator">
     <treeState />
@@ -1151,7 +1189,7 @@
       <recent name="C:\Users\tom.ben-simhon\Documents\appium-gradle-getting-started\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml">
+  <component name="RunManager" selected="TestNG.LoginExperiTest.testLoginWithValidCreds">
     <configuration default="false" name="appium-gradle-getting-started [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1186,6 +1224,39 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="LoginExperiTest.testLoginWithValidCreds" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="app.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="appium-gradle-getting-started_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="app.tests" />
+      <option name="MAIN_CLASS_NAME" value="app.tests.LoginExperiTest" />
+      <option name="METHOD_NAME" value="testLoginWithValidCreds" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1559,16 +1630,18 @@
       <listeners />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.xml" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.appium-gradle-getting-started [build]" />
       <item index="3" class="java.lang.String" itemvalue="Gradle.appium-gradle-getting-started [clean]" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.LoginExperiTest.testLoginWithValidCreds" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.appium-gradle-getting-started [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.appium-gradle-getting-started [build]" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.LoginExperiTest.testLoginWithValidCreds" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.appium-gradle-getting-started [clean]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.appium-gradle-getting-started [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -1585,13 +1658,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1484143558218</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1484155865904</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1484155865904</updated>
     </task>
     <task id="LOCAL-00002" summary="changed to generic configurations">
       <created>1484156789443</created>
@@ -1929,39 +1995,46 @@
       <option name="project" value="LOCAL" />
       <updated>1487873828105</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="change eribankO name">
+      <created>1487873966548</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1487873966549</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 20h 37m 07s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 03m 13s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 20h 40m 56s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 06m 44s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 21h 14m 47s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 16m 13s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 21h 51m 48s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 18m 40s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 22h 10m 34s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 19m 46s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 01h 37m 35s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 20m 38s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 19h 57m 37s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 28m 06s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 19h 57m 47s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 33m 28s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 20h 16m 25s.xml">
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 21h 36m 34s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_xml - 2017.02.21 at 20h 33m 14s.xml">
-      <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.xml" configurationId="TestNG" />
+    <history-entry file="LoginExperiTest_testLoginWithValidCreds - 2017.02.23 at 21h 29m 46s.xml">
+      <configuration name="LoginExperiTest.testLoginWithValidCreds" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1975,7 +2048,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28209192" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1984,24 +2057,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55921054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41118422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.6386688" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.6386688" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34539473" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23600605" sideWeight="0.49565217" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26866764" sideWeight="0.36133122" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37993422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5871711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2014,7 +2087,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed project structure, added parametized tests in tesgng" />
     <MESSAGE value="fixed web testing for iOS" />
     <MESSAGE value="added framework package and started working on logging and TestBase based on suite" />
     <MESSAGE value="working on TestBaseNative&#10;&#10;Added logger for testMethods and Test in Suite&#10;" />
@@ -2039,18 +2111,11 @@
     <MESSAGE value="added travis build id handler" />
     <MESSAGE value="fixed TestBase to EribankTestBase" />
     <MESSAGE value="added travis build tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="added travis build tag" />
+    <MESSAGE value="change eribankO name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change eribankO name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/STDUtils.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-defaults>
         <breakpoint suspend="THREAD" type="java-line" />
       </breakpoints-defaults>
@@ -2066,20 +2131,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.8/8895c842d25756b59e252823f697b263c12de7ce/testng-6.8-sources.jar!/org/testng/SuiteRunnerWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/FullScreenPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/framework/LogListener.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/app/TestBaseAppNext.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/framework/CapabilitiesManager.java" />
@@ -2130,17 +2181,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/eribankO.ipa">
+    <entry file="file://$PROJECT_DIR$/apps/EriBankO.ipa">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2148,14 +2193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4301">
           <caret line="330" column="18" lean-forward="false" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.local.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2277,36 +2314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/STDUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#STDUtils#0" expanded="true" />
-            <element signature="docComment;method#getAppiumClient#0;class#STDUtils#0" expanded="true" />
-            <element signature="docComment;method#generateReport#0;class#STDUtils#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -2320,8 +2327,8 @@
         <state relative-caret-position="107">
           <caret line="1141" column="0" lean-forward="false" selection-start-line="1141" selection-start-column="0" selection-end-line="1141" selection-end-column="0" />
           <folding>
-            <element signature="e#25063#25064#0" expanded="true" />
-            <element signature="e#25102#25103#0" expanded="true" />
+            <element signature="e#25063#25064#0" expanded="false" />
+            <element signature="e#25102#25103#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2406,18 +2413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="docComment;class#LoginExperiTest#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/build.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2452,35 +2447,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="120" column="19" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+        <state relative-caret-position="126">
+          <caret line="150" column="7" lean-forward="true" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
           <folding>
-            <element signature="e#0#6811#0" expanded="true" />
+            <element signature="e#0#6834#0" expanded="true" />
             <element signature="docComment;method#setUpTest#0;class#EribankTestBase#0" expanded="true" />
             <element signature="docComment;method#setUpClass#0;class#EribankTestBase#0" expanded="true" />
             <element signature="docComment;method#setUpBeforeMethod#0;class#EribankTestBase#0" expanded="true" />
             <element signature="docComment;method#tearDownMethod#0;class#EribankTestBase#0" expanded="true" />
             <element signature="docComment;method#tearDown#0;class#EribankTestBase#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6829#6830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="e#2681#2682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/STDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="docComment;class#STDUtils#0" expanded="true" />
+            <element signature="docComment;method#getAppiumClient#0;class#STDUtils#0" expanded="true" />
+            <element signature="docComment;method#generateReport#0;class#STDUtils#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="40">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#MakePaymentExperiTest#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.appium/java-client/4.1.2/6505c7dcf5af12fbf649daaed85653790712e12a/java-client-4.1.2-sources.jar!/io/appium/java_client/AppiumDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="556" column="44" lean-forward="false" selection-start-line="556" selection-start-column="44" selection-end-line="556" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding>
+            <element signature="docComment;class#LoginExperiTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/eribank.tests.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
