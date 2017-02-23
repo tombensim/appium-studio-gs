@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6121f7b0-0161-42e8-949f-52e8a0a97387" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/STDUtils.java" afterPath="$PROJECT_DIR$/src/main/java/utils/STDUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java" afterPath="$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" />
     </list>
     <list id="326f3754-22fe-40bb-927a-e190b5efac43" name="Rejected commit: Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -182,8 +183,8 @@
       <file leaf-file-name="ExperiTestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="49" column="77" lean-forward="false" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
               <folding>
                 <element signature="docComment;class#ExperiTestBase#0" expanded="true" />
               </folding>
@@ -191,42 +192,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/Invoker.java">
+      <file leaf-file-name="EribankTestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMethodWorker.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/TestMethodWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuiteRunner.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/SuiteRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/TestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="781" column="0" lean-forward="false" selection-start-line="781" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="98">
+              <caret line="120" column="19" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#6811#0" expanded="true" />
+                <element signature="docComment;method#setUpTest#0;class#EribankTestBase#0" expanded="true" />
+                <element signature="docComment;method#setUpClass#0;class#EribankTestBase#0" expanded="true" />
+                <element signature="docComment;method#setUpBeforeMethod#0;class#EribankTestBase#0" expanded="true" />
+                <element signature="docComment;method#tearDownMethod#0;class#EribankTestBase#0" expanded="true" />
+                <element signature="docComment;method#tearDown#0;class#EribankTestBase#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,7 +239,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginExperiTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginExperiTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="97">
@@ -275,11 +253,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodInvocationHelper.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <file leaf-file-name="build.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/build.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakePaymentExperiTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#MakePaymentExperiTest#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -310,6 +320,7 @@
       <find>user</find>
       <find>experiJ</find>
       <find>getApp</find>
+      <find>build.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -783,7 +794,6 @@
         <option value="$PROJECT_DIR$/src/test/java/framework/CapabilitiesManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/AppiumStudioClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/framework/TestNGLogger.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/build/resources/test/log4j.properties" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
@@ -799,15 +809,16 @@
         <option value="$PROJECT_DIR$/src/test/java/app/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/EriBankTestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/MakePaymentPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/eribank.tests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/app/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/STDUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java" />
       </list>
     </option>
   </component>
@@ -922,6 +933,86 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="appium-gradle-getting-started" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium-gradle-getting-started" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1812,13 +1903,17 @@
       <option name="project" value="LOCAL" />
       <updated>1487872275827</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="fixed TestBase to EribankTestBase">
+      <created>1487872697479</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1487872697479</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 20h 34m 43s.xml">
-      <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.21 at 20h 37m 07s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
@@ -1841,6 +1936,9 @@
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 19h 57m 47s.xml">
+      <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_local_xml - 2017.02.23 at 20h 16m 25s.xml">
       <configuration name="C:/Users/tom.ben-simhon/Documents/appium-gradle-getting-started/src/test/eribank.tests.local.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="C__Users_tom_ben-simhon_Documents_appium-gradle-getting-started_src_test_eribank_tests_xml - 2017.02.21 at 20h 33m 14s.xml">
@@ -1867,7 +1965,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41118422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.6386688" order="0" side_tool="false" content_ui="combo" />
@@ -1877,7 +1975,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26866764" sideWeight="0.36133122" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37993422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37993422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1897,7 +1995,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
     <MESSAGE value="changed to generic configurations" />
     <MESSAGE value="changed project structure, added parametized tests in tesgng" />
     <MESSAGE value="fixed web testing for iOS" />
@@ -1922,7 +2019,8 @@
     <MESSAGE value="continue setup travis, changed to jdk 8" />
     <MESSAGE value="1. split expri-support from testing project &#10;added experiJar task to export a jar file&#10; &#10; fixed some tests and testing Travis integration&#10;" />
     <MESSAGE value="added travis build id handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="added travis build id handler" />
+    <MESSAGE value="fixed TestBase to EribankTestBase" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed TestBase to EribankTestBase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1989,13 +2087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html" />
     <entry file="file://$PROJECT_DIR$/testng.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -2014,13 +2105,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/resources/test/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/build.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
@@ -2132,14 +2216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/tmp/experiJar/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2153,16 +2229,6 @@
         <state relative-caret-position="236">
           <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="docComment;class#MakePaymentExperiTest#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2196,24 +2262,6 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#SearchGoogleExperiTest#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="81" column="41" lean-forward="false" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#6829#0" expanded="true" />
-            <element signature="e#1282#1318#0" expanded="true" />
-            <element signature="docComment;method#setUpTest#0;class#EribankTestBase#0" expanded="true" />
-            <element signature="docComment;method#setUpClass#0;class#EribankTestBase#0" expanded="true" />
-            <element signature="docComment;method#setUpBeforeMethod#0;class#EribankTestBase#0" expanded="true" />
-            <element signature="docComment;method#tearDownMethod#0;class#EribankTestBase#0" expanded="true" />
-            <element signature="docComment;method#tearDown#0;class#EribankTestBase#0" expanded="true" />
-            <element signature="e#6766#6767#0" expanded="true" />
-            <element signature="e#6824#6825#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2347,16 +2395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#ExperiTestBase#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/LoginExperiTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -2365,6 +2403,65 @@
             <element signature="docComment;class#LoginExperiTest#0" expanded="true" />
             <element signature="e#695#696#0" expanded="true" />
             <element signature="e#744#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/framework/ExperiTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="49" column="77" lean-forward="false" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
+          <folding>
+            <element signature="docComment;class#ExperiTestBase#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/EribankTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="120" column="19" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#6811#0" expanded="true" />
+            <element signature="docComment;method#setUpTest#0;class#EribankTestBase#0" expanded="true" />
+            <element signature="docComment;method#setUpClass#0;class#EribankTestBase#0" expanded="true" />
+            <element signature="docComment;method#setUpBeforeMethod#0;class#EribankTestBase#0" expanded="true" />
+            <element signature="docComment;method#tearDownMethod#0;class#EribankTestBase#0" expanded="true" />
+            <element signature="docComment;method#tearDown#0;class#EribankTestBase#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/app/tests/MakePaymentExperiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MakePaymentExperiTest#0" expanded="true" />
           </folding>
         </state>
       </provider>

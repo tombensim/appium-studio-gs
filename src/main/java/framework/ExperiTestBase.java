@@ -32,7 +32,8 @@ public class ExperiTestBase {
     public static final String REPORTER_URL = "cloudreports.experitest.com:80";
 
     protected static String BUILD_ID = null;
-    private static String typeTag;
+    protected static String typeTag;
+    protected static String buildTag;
     private static String griduser;
     private static String gridpass;
 
@@ -41,13 +42,12 @@ public class ExperiTestBase {
     // Set Reporter configuration for Tests to follow
     static {
         System.setProperty("manager.url", REPORTER_URL);
-        // Set the build.id from the CI enviroment
-        BUILD_ID = System.getenv("eribank.build.id") != null ? System.getenv("eribank.build.id") :
-                System.getenv("TRAVIS_BUILD_NUMBER") != null ? System.getenv("TRAVIS_BUILD_NUMBER")
-                        : LOCAL_BUILD; //default value, local build no CI
+        // Set the build.id from the CI enviroment or Local
+        buildTag = System.getenv("eribank.build.id") != null ? "eribank.build.id" : "TRAVIS_BUILD_NUMBER";
+        BUILD_ID = System.getenv(buildTag) != null ? System.getenv(buildTag) : LOCAL_BUILD;
         griduser = System.getenv("griduser");
         gridpass = System.getenv("gridpass");
-        typeTag = BUILD_ID.equals(LOCAL_BUILD) ? "eribank.debug" : "eribank";
+        typeTag = BUILD_ID.equals(LOCAL_BUILD) ? "eribank" : "eribank.debug";
     }
 
     public DesiredCapabilities getGridCapabilities(boolean useGrid) {

@@ -118,7 +118,7 @@ public class EribankTestBase extends ExperiTestBase {
     public void setUpBeforeMethod(Method m)  {
         // Add report test properties
         reporteClient.addProperty("type", typeTag);
-        reporteClient.addProperty("jenkins.eribank.build.id", BUILD_ID);
+        reporteClient.addProperty(buildTag, BUILD_ID);
 
         DesiredCapabilities dc = new DesiredCapabilities();
         dc.merge(getGridCapabilities(useGrid));
