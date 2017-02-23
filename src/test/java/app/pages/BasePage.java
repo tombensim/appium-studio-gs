@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 @SuppressWarnings("ALL")
 public abstract class BasePage {
     public static final int TIME_OUT_WAIT_IN_SECONDS = 10;
+    public static final int TIME_WAIT_BEFORE_INITELEMENTS = 1000; //In millies
 
     protected final AppiumDriver<MobileElement> driver;
     protected final AppiumStudioClient apc;
@@ -27,7 +28,7 @@ public abstract class BasePage {
         this.driver = driver;
         apc = STDUtils.getAppiumClient(driver);
         wda = new WebDriverWait(driver, TIME_OUT_WAIT_IN_SECONDS);
-        apc.sleep(1000);
+        apc.sleep(TIME_WAIT_BEFORE_INITELEMENTS);
         PageFactory.initElements(new AppiumFieldDecorator(driver, 10, TimeUnit.SECONDS), this);
     }
     //public abstract void verifyPage();

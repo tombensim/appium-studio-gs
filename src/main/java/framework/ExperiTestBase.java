@@ -36,13 +36,18 @@ public class ExperiTestBase {
     private static String griduser;
     private static String gridpass;
 
+    public static final String LOCAL_BUILD = "LOCAL_BUILD_ID";
+
     // Set Reporter configuration for Tests to follow
     static {
         System.setProperty("manager.url", REPORTER_URL);
-        BUILD_ID = System.getenv("eribank.build.id") != null ? System.getenv("eribank.build.id") : "99999999";
+        // Set the build.id from the CI enviroment
+        BUILD_ID = System.getenv("eribank.build.id") != null ? System.getenv("eribank.build.id") :
+                System.getenv("TRAVIS_BUILD_NUMBER") != null ? System.getenv("TRAVIS_BUILD_NUMBER")
+                        : LOCAL_BUILD; //default value, local build no CI
         griduser = System.getenv("griduser");
         gridpass = System.getenv("gridpass");
-        typeTag = BUILD_ID.equals("99999999") ? "eribank.debug" : "eribank";
+        typeTag = BUILD_ID.equals(LOCAL_BUILD) ? "eribank.debug" : "eribank";
     }
 
     public DesiredCapabilities getGridCapabilities(boolean useGrid) {
