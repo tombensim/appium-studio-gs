@@ -16,7 +16,7 @@ import app.pages.LoginPage;
  * consolidates login functionallity tests
  */
 
-public class LoginExperiTest extends ExperiTestBase {
+public class LoginExperiTest extends EribankTestBase {
 
     private static final String VALID_USER = "company";
     private static final String VALID_PASSWORD = "company";

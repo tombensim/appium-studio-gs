@@ -23,14 +23,14 @@ import java.net.URL;
 public class STDUtils {
     /**
      * Return AppiumStudioClient from SeeTestAndroid OR SeeTestIOSDriver initilized instances
+     *
      * @param driver
      * @return
      */
-    public  static AppiumStudioClient getAppiumClient (AppiumDriver driver)
-    {
+    public static AppiumStudioClient getAppiumClient(AppiumDriver driver) {
         if (driver instanceof SeeTestAndroidDriver || driver instanceof SeeTestIOSDriver) {
-            Client client = (driver instanceof SeeTestAndroidDriver) ? ((SeeTestAndroidDriver) driver).getClient() :
-                    ((SeeTestIOSDriver) driver).getClient();
+            Client client = (driver instanceof SeeTestAndroidDriver) ?
+                    ((SeeTestAndroidDriver) driver).getClient() : ((SeeTestIOSDriver) driver).getClient();
             return new AppiumStudioClient(client);
         }
         throw new RuntimeException("AppiumDriver wasn't initilized using new SeeTestAndroidDriver OR SeeTestIOSDriver" +
@@ -40,18 +40,17 @@ public class STDUtils {
 
     /**
      * Quits the session and generates a report for the test
+     *
      * @param driver
      * @return
      */
-    public  static String generateReport (AppiumDriver driver)
-    {
+    public static String generateReport(AppiumDriver driver) {
         driver.quit();
         return (driver instanceof SeeTestAndroidDriver) ? ((SeeTestAndroidDriver) driver).getReportFolder() :
                 ((SeeTestIOSDriver) driver).getReportFolder();
     }
 
-    public static AppiumDriver getDriver(String os,URL url, DesiredCapabilities caps)
-    {
-        return os.equals("android") ? new SeeTestAndroidDriver<>(url,caps) : new SeeTestIOSDriver<>(url,caps);
+    public static AppiumDriver getDriver(String os, URL url, DesiredCapabilities caps) {
+        return os.equals("android") ? new SeeTestAndroidDriver<>(url, caps) : new SeeTestIOSDriver<>(url, caps);
     }
 }
