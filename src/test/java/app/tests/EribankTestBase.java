@@ -31,7 +31,7 @@ public class EribankTestBase extends ExperiTestBase {
     //Appium Studio parameters
     private static final String DEFAULT_SUITE_OS = "ios";
     private static final String LOCAL_SERVER_URL = "http://localhost:4723";
-    private static final String GRID_SERVER_URL = "http://sales.experitest.com";
+    private static final String GRID_SERVER_URL = "https://cloud.experitest.com";
 
     @SuppressWarnings("FieldCanBeLocal")
     private String reportDirectory = "reports";
